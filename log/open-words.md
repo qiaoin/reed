@@ -1,7 +1,37 @@
 # 未查生词（绿色）
 
 > 由 `weread_sync.py` 自动生成。查到就改成黄色，下次同步会从这里消失。
-> 当前 109 个。
+> 当前 143 个。
+
+## The Murder of Roger Ackroyd · Chapter 10 The Parlourmaid
+
+- Parlourmaid
+- chin
+- perplexity
+- My poor nerves.
+- wreck
+- dreadful
+- intruding
+- aback
+- interest
+- irises
+- narrated
+- peculiar
+- resented
+- queer
+- rectitude
+- stemming
+- seized
+- drily
+- bulgy
+- trivial
+- alibi
+- confess
+- frowned
+- murmured
+- muttering
+- whirled
+- flare up
 
 ## The Murder of Roger Ackroyd · Chapter 5 Murder
 
@@ -50,34 +80,47 @@
 
 ## The Murder of Roger Ackroyd · Chapter 7 I Learn My Neighbour’s Profession
 
-- concealed
 - faded
-- fogey
 - Extraordinary
 - persuade
-- grudgingly
 - sprang
-- heeded
 - momentarily
-- astounded
 - luggage
 - stamped
 - tack
 - extravagant
 - nicest
 - restrained
-- ushered
 - tragedy
-- mademoiselle
-- imperious
 - Reassure
 - amateurs
-- stolidity
 - stoop
-- faint
 - admitted
 - departure
 - animated
+
+## The Murder of Roger Ackroyd · Chapter 8 Inspector Raglan is Confident
+
+- sanguine
+- mere
+- junction
+- shunted
+- bustle
+- peculiar
+- debonair
+- acquaintance
+- solicitor
+- tongue
+- trespass
+- starch
+
+## The Murder of Roger Ackroyd · Chapter 9 The Goldfish Pond
+
+- thrust
+- latter
+- compliment
+- blushes
+- extravagantly
 
 ## The Murder of Roger Ackroyd · I
 
