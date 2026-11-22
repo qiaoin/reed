@@ -52,6 +52,9 @@ python3 scripts/stats.py --days 7   # 出周报
 | And Then There Were None | **The Murder of Roger Ackroyd** 44.0% | The Magic Finger | — |
 | Cards on the Table | | | |
 
+> 睡前轨（与主线并行，不算 WIP）：**已完成 1/13** — The Magic Finger（2.5k 词 / 30 分钟 / 标 31 查 0）。
+> 下一本：**The Giraffe and the Pelly and Me**（5k / 740L，预计 2 晚）。顺序见 [BEDTIME.md](BEDTIME.md)。
+
 ---
 
 ## D. 本书进度 · The Murder of Roger Ackroyd
