@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# 生成的周报/月报（目录保留，内容不入库）
+reports/*
+!reports/.gitkeep
+
+# 本地临时文件
+*.swp
+*~
