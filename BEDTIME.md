@@ -47,7 +47,7 @@
 |---|---|---:|---:|---:|---|
 | 0 | The Enormous Crocodile | 1k | 600L | 1 | **盒子里没有**，可单买当开场 |
 | 1 | The Magic Finger ✅ | 2.5k | 560L | 1 | 已完成 |
-| 2 | The Giraffe and the Pelly and Me | 5k | 740L | 2 | 短，插图多 |
+| 2 | The Giraffe and the Pelly and Me | 5k | 740L | 2 | 在读 87%（11-22） |
 | 3 | Esio Trot | 5k | 740L | 2 | 短 |
 | 4 | The Twits | 8k | 750L | 3 | 毒舌，节奏快 |
 | 5 | Fantastic Mr Fox | 9k | 600L | 4 | 电影熟悉 |
@@ -77,6 +77,8 @@ Lexile 会低估他：书里有大量自造词（snozzcumber、whizzpopper）、
 睡前书在 `reading-log.csv` 里标 `slot=bedtime`，不计入主线的密度和速度，只单独统计本数、词数、时长。
 
 《The Magic Finger》已完成：2,500 词 / 30 分钟 / 标了 31 个词、0 次查词。
+
+《The Giraffe and the Pelly and Me》11-22 22:03–22:57：4,336 词 / 55 分钟 / 47 处划线（查 1 / 留 46）/ 87%。这晚超了 30 分钟，下一次设表。
 
 ## Dahl 之后：同类的睡前书
 

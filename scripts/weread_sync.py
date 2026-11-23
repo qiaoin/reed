@@ -217,9 +217,8 @@ def main() -> None:
         if row is None:
             unknown.append(f"{wx_title}  (bookId={book_id}, {len(marks)} 条划线)")
             continue
-        if row.get("slot") == "bedtime":
-            continue
         title = row["title"]
+        slot = (row.get("slot") or "main").strip() or "main"
         book_words = int(float(row["words"] or 60000))
         allocated = allocate(marks, read_chapters(conn, str(book_id)), book_words)
         words_by_day = allocated["words_by_day"]
@@ -229,6 +228,9 @@ def main() -> None:
         by_day: dict[date, list[dict]] = defaultdict(list)
         for mark in marks:
             by_day[mark["time"].date()].append(mark)
+            if slot != "main":
+                # 睡前轨只记账（本数 / 时长 / 进度），不进主线生词表
+                continue
             repeated[mark["text"].casefold()] += 1
             total_marks += 1
             if mark["color"] != DEFERRED_COLOR:
@@ -252,7 +254,8 @@ def main() -> None:
             if day < since:
                 prev_cum = cum
                 continue
-            total_words += words
+            if slot == "main":
+                total_words += words
             groups = sessions_of(day_marks)
             minutes = 0
             for group in groups:
@@ -280,7 +283,7 @@ def main() -> None:
                 "perfectionism": "",
                 "highlight": "",
                 "source": "weread",
-                "slot": "main",
+                "slot": slot,
             })
             prev_cum = cum
 
@@ -310,8 +313,8 @@ def main() -> None:
     merged = kept + new_rows
 
     print(f"## 微信读书同步 · {new_rows[0]['date']} → {new_rows[-1]['date']}\n")
-    print("| 日期 | 书名 | 词数 | 查词 | 未查 | 中断率 | 分钟 | wpm | 时段数 |")
-    print("|---|---|---:|---:|---:|---:|---:|---:|---:|")
+    print("| 日期 | 书名 | 槽 | 词数 | 查词 | 未查 | 中断率 | 分钟 | wpm | 时段数 |")
+    print("|---|---|---|---:|---:|---:|---:|---:|---:|---:|")
     for row in new_rows:
         words = (float(row["to_pct"]) - float(row["from_pct"])) / 100 * next(
             int(float(b["words"])) for b in books if b["title"] == row["book"]
@@ -319,7 +322,7 @@ def main() -> None:
         density = int(row["lookups"]) / words * 1000 if words else 0
         wpm = words / int(row["minutes"]) if int(row["minutes"]) else 0
         n_sessions = sum(1 for s in sessions_out if s["date"] == row["date"] and s["book"] == row["book"])
-        print(f"| {row['date']} | {row['book']} | {words:,.0f} | {row['lookups']} | "
+        print(f"| {row['date']} | {row['book']} | {row['slot']} | {words:,.0f} | {row['lookups']} | "
               f"{row['marks']} | {density:.1f} | {row['minutes']} | {wpm:.0f} | {n_sessions} |")
 
     if total_words:

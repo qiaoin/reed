@@ -15,9 +15,9 @@ python3 scripts/stats.py --days 7   # 出周报
 
 | 书名 | 进度 | 读到 | 累计词数 | 累计查词 | 密度 | 阶段目标 |
 |---|---|---:|---:|---:|---:|---:|
-| The Murder of Roger Ackroyd | 44.0% | Chapter 10 | 33,023 | 196 查 / 143 留 | 5.9 /千词 | ≤ 4.0 |
+| The Murder of Roger Ackroyd | 53.5% | Chapter 13 | 40,141 | 196 查 / 185 留 | 4.9 /千词 | ≤ 4.0 |
 
-读完 10 章，剩 17 章 / 约 42k 词。
+读完 13 章，剩 14 章 / 约 35k 词。
 
 ---
 
@@ -30,6 +30,7 @@ python3 scripts/stats.py --days 7   # 出周报
 | 2026-11-20 | Roger Ackroyd | 0→5.9% | 4,418 | 100 | 96 / — | 0 |  |  |  |
 | 2026-11-21 | Roger Ackroyd | 5.9→24.7% | 14,122 | 239 | 89 / — | 81 |  |  |  |
 | 2026-11-22 | Roger Ackroyd | 24.7→44.0% | 14,483 | 123 | 11 / — | 62 |  |  | 波洛在喷泉花园偷听 |
+| 2026-11-23 | Roger Ackroyd | 44.0→53.5% | 7,118 | 66 | 0 / — | 42 |  |  | Ch11–13 有划线；Ch12 有一条长段标记 |
 
 > 基线周不设配额（W0 只测，不管）。从 Chapter 4 起按「每章 10 个」执行，见 §D。
 
@@ -49,11 +50,13 @@ python3 scripts/stats.py --days 7   # 出周报
 
 | 📥 排队（最多 2 本） | 📖 在读（只能 1 本） | ✅ 本周读完 | 🗄 弃读（年度配额 1） |
 |---|---|---|---|
-| And Then There Were None | **The Murder of Roger Ackroyd** 44.0% | The Magic Finger | — |
+| And Then There Were None | **The Murder of Roger Ackroyd** 53.5% | The Magic Finger | — |
 | Cards on the Table | | | |
 
+> 换书池：[SHELF.md](SHELF.md) — 微信读书 40 个书单里筛出的 61 本英文原著候选（读过 / 未读、阶段、Lexile）。
 > 睡前轨（与主线并行，不算 WIP）：**已完成 1/13** — The Magic Finger（2.5k 词 / 30 分钟 / 标 31 查 0）。
-> 下一本：**The Giraffe and the Pelly and Me**（5k / 740L，预计 2 晚）。顺序见 [BEDTIME.md](BEDTIME.md)。
+> **在读**：The Giraffe and the Pelly and Me —— 11-22 22:03–22:57，55 分钟，47 处划线（查 1 / 留 46），进度 ~87%。
+> 规矩是 30 分钟关灯，这晚超了 25 分钟：不是读得太多，是没设表。顺序见 [BEDTIME.md](BEDTIME.md)。
 
 ---
 
@@ -71,9 +74,12 @@ python3 scripts/stats.py --days 7   # 出周报
 | Ch8 Inspector Raglan is Confident | 3,285 | 12（查 0 / 留 12） | 3.7 | ✅ |
 | Ch9 The Goldfish Pond | 2,730 | 5（查 0 / 留 5） | 1.8 | ✅ |
 | Ch10 The Parlourmaid | 4,313 | 27（查 0 / 留 27） | 6.3 | ✅ |
-| Ch11–Ch27 | ~42,000 | 每章 ≤ 10 | — | 未开始 |
+| Ch11 Poirot Pays a Call | 2,292 | 14 | 6.1 | ✅ |
+| Ch12 Round the Table | 2,762 | 19 | 6.9 | ✅ |
+| Ch13 The Goose Quill | 2,065 | 9 | 4.4 | ✅ |
+| Ch14–Ch27 | ~34,900 | 每章 ≤ 10 | — | 未开始 |
 
-**本阶段目标**：中断率从 20.4 压到 10 以下，再压到 4；当前 **5.9**，已过第一道线。生词率另算，不设上限。
+**本阶段目标**：中断率从 20.4 压到 10 以下，再压到 4；当前 **4.9**，已过第一道线。生词率另算，不设上限。
 
 ### 本周实验（Ch4 开始）
 

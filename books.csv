@@ -20,19 +20,19 @@ P4,2,The Return of the King,J. R. R. Tolkien,130000,860L,4.5,queued,看过影视
 P4,3,The Remains of the Day,Kazuo Ishiguro,140000,1350L,5,queued,看过中文,不可靠叙述顶点；终考前的最后一关,,main
 P4,4,Final Exam (TBD),自选,80000,,4,queued,必须未读,终考：陌生推理小说,,main
 EXT,1,Steve Jobs,Walter Isaacson,570000,1080L,4,queued,未读,2029 加时第一本（方案 A）,,main
-BED,1,The Enormous Crocodile,Roald Dahl,1000,600L,1,queued,可能看过,另购：一晚读完的开场,,
-BED,2,The Giraffe and the Pelly and Me,Roald Dahl,5000,740L,2,queued,未读,诚品 16 册：2 晚,,
-BED,3,Esio Trot,Roald Dahl,5000,740L,2,queued,未读,诚品 16 册：2 晚,,
-BED,4,The Twits,Roald Dahl,8000,750L,2,queued,未读,诚品 16 册：3 晚,,
-BED,5,Fantastic Mr Fox,Roald Dahl,9000,600L,2,queued,看过影视,诚品 16 册：4 晚,,
-BED,6,Billy and the Minpins,Roald Dahl,10000,700L,2.5,queued,未读,诚品 16 册：4 晚；晚期短篇,,
-BED,7,George's Marvellous Medicine,Roald Dahl,11000,640L,2,queued,未读,诚品 16 册：4–5 晚,,
-BED,8,The BFG,Roald Dahl,37000,720L,3,queued,看过影视,诚品 16 册：Goodreads #3,,
+BED,1,The Enormous Crocodile,Roald Dahl,1000,600L,1,queued,可能看过,另购：一晚读完的开场,,bedtime
+BED,2,The Giraffe and the Pelly and Me,Roald Dahl,5000,740L,2,reading,未读,诚品 16 册：2 晚,,bedtime
+BED,3,Esio Trot,Roald Dahl,5000,740L,2,queued,未读,诚品 16 册：2 晚,,bedtime
+BED,4,The Twits,Roald Dahl,8000,750L,2,queued,未读,诚品 16 册：3 晚,,bedtime
+BED,5,Fantastic Mr Fox,Roald Dahl,9000,600L,2,queued,看过影视,诚品 16 册：4 晚,,bedtime
+BED,6,Billy and the Minpins,Roald Dahl,10000,700L,2.5,queued,未读,诚品 16 册：4 晚；晚期短篇,,bedtime
+BED,7,George's Marvellous Medicine,Roald Dahl,11000,640L,2,queued,未读,诚品 16 册：4–5 晚,,bedtime
+BED,8,The BFG,Roald Dahl,37000,720L,3,queued,看过影视,诚品 16 册：Goodreads #3,,bedtime
 BED,9,Revolting Rhymes,Roald Dahl,3000,820L,2.5,queued,未读,韵文；一晚读完；Quentin Blake 插画,,bedtime
-BED,10,Matilda,Roald Dahl,40000,840L,3,queued,看过影视,诚品 16 册：Goodreads #1,,
-BED,11,Charlie and the Chocolate Factory,Roald Dahl,47000,810L,3,queued,看过影视,诚品 16 册：Goodreads #2,,
-BED,12,James and the Giant Peach,Roald Dahl,40000,870L,3,queued,看过影视,诚品 16 册：Goodreads #5,,
-BED,13,Danny the Champion of the World,Roald Dahl,30000,770L,3,queued,未读,诚品 16 册：非奇幻，父子,,
+BED,10,Matilda,Roald Dahl,40000,840L,3,queued,看过影视,诚品 16 册：Goodreads #1,,bedtime
+BED,11,Charlie and the Chocolate Factory,Roald Dahl,47000,810L,3,queued,看过影视,诚品 16 册：Goodreads #2,,bedtime
+BED,12,James and the Giant Peach,Roald Dahl,40000,870L,3,queued,看过影视,诚品 16 册：Goodreads #5,,bedtime
+BED,13,Danny the Champion of the World,Roald Dahl,30000,770L,3,queued,未读,诚品 16 册：非奇幻，父子,,bedtime
 DAY,1,Boy: Tales of Childhood,Roald Dahl,35000,1020L,4,queued,未读,自传；读完 6 本 Dahl 后白天读,,main
 DAY,2,Going Solo,Roald Dahl,50000,1020L,4,queued,未读,自传；Boy 之后读,,main
 B,1,The Great Gatsby,F. Scott Fitzgerald,47000,1070L,4,backup,看过中文,备选：象征与不可靠叙述,,main

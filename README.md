@@ -105,6 +105,7 @@
 |---|---|---|
 | [BOARD.md](BOARD.md) | 看板：每日打卡、书籍队列、周指标 | 每天读完 |
 | [MILESTONES.md](MILESTONES.md) | 4 个半年阶段：心态目标、书单、退出条件 | 每季度 / 换书时 |
+| [SHELF.md](SHELF.md) | 微信读书书单筛出的英文原著候选池（读过 / 未读、阶段、Lexile） | 想换书时 |
 | [SERIES.md](SERIES.md) | 主线之外的系列书单（2029 候选池） | 想换口味时 |
 | [BEDTIME.md](BEDTIME.md) | 睡前短读：Roald Dahl 顺序与规则 | 每晚睡前 |
 | [COACH.md](COACH.md) | 教练规则：汇报格式、提问库、话术、红黄牌 | 想看「教练怎么管我」时 |

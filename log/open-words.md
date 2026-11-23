@@ -1,7 +1,7 @@
 # 未查生词（绿色）
 
 > 由 `weread_sync.py` 自动生成。查到就改成黄色，下次同步会从这里消失。
-> 当前 143 个。
+> 当前 185 个。
 
 ## The Murder of Roger Ackroyd · Chapter 10 The Parlourmaid
 
@@ -32,6 +32,60 @@
 - muttering
 - whirled
 - flare up
+
+## The Murder of Roger Ackroyd · Chapter 11 Poirot Pays a Call
+
+- intelligible
+- meditations
+- advent
+- mistress
+- utterance
+- vanished
+- cordiality
+- deception
+- strained
+- conveyed
+- innuendoes
+- coarse
+- grumpy
+- halter
+
+## The Murder of Roger Ackroyd · Chapter 12 Round the Table
+
+- probable
+- irrelevant
+- harps
+- endeavoured
+- patronising
+- twinkling
+- reunion
+- persuade
+- whereabouts
+- entrap
+- hardened
+- notoriety
+- loath
+- precipitate
+- disloyal
+- through thick and thin
+- contradiction
+- concealing
+
+## The Murder of Roger Ackroyd · Chapter 13 The Goose Quill
+
+- reluctance
+- hospitably
+- hazarded
+- evasively
+- fishy
+- stirred
+- rendezvous
+- stole
+- inclined
+
+## The Murder of Roger Ackroyd · Chapter 14 Mrs Ackroyd
+
+- chronicled
 
 ## The Murder of Roger Ackroyd · Chapter 5 Murder
 

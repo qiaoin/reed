@@ -284,11 +284,15 @@ def report(entries: list[Entry], since: date, until: date) -> str:
 
     lines += ["", "**教练判读**", ""] + [f"- {v}" for v in verdicts[:3]]
     if bed_all:
-        bbooks = len({e.book for e in bed_window})
+        done = {e.book for e in bed_window if e.end >= 95}
+        reading = {e.book for e in bed_window} - done
         bwords = sum(e.words for e in bed_window)
         bmins = sum(e.minutes for e in bed_window)
         extra = f" · {bwords / bmins:.0f} wpm" if bmins else ""
-        lines += ["", f"**睡前** {bbooks} 本 · {fmt_int(bwords)} 词{extra}（不计入主线指标）"]
+        label = f"{len(done)} 本读完"
+        if reading:
+            label += " + 在读 " + "、".join(sorted(reading))
+        lines += ["", f"**睡前** {label} · {fmt_int(bwords)} 词{extra}（不计入主线指标）"]
     return "\n".join(lines) + "\n"
 
 
