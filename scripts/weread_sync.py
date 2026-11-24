@@ -224,6 +224,19 @@ def main() -> None:
         words_by_day = allocated["words_by_day"]
         cum_by_day = allocated["cum_by_day"]
 
+        # 划线只能推出「读过哪些章」，推不出结尾：书读完时用微信读书的
+        # finishReading 把最后一天校准到 100%，按比例回填其余各天。
+        finished = conn.execute(
+            "select finishReading from WRBook where bookId=?", (str(book_id),)
+        ).fetchone()
+        if finished and finished[0] and cum_by_day:
+            last_day = max(cum_by_day)
+            last_pct = cum_by_day[last_day] / book_words
+            if 0 < last_pct < 1:
+                k = min(1.0 / last_pct, 1.6)
+                words_by_day = {d: w * k for d, w in words_by_day.items()}
+                cum_by_day = {d: c * k for d, c in cum_by_day.items()}
+
         prev_cum = 0.0
         by_day: dict[date, list[dict]] = defaultdict(list)
         for mark in marks:
