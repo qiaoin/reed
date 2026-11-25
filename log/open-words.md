@@ -1,7 +1,7 @@
 # 未查生词（绿色）
 
 > 由 `weread_sync.py` 自动生成。查到就改成黄色，下次同步会从这里消失。
-> 当前 185 个。
+> 当前 223 个。
 
 ## The Murder of Roger Ackroyd · Chapter 10 The Parlourmaid
 
@@ -86,6 +86,53 @@
 ## The Murder of Roger Ackroyd · Chapter 14 Mrs Ackroyd
 
 - chronicled
+- piecemeal
+- elucidation
+- renown
+- prostrated
+- tonic
+- startled
+- lingered
+
+## The Murder of Roger Ackroyd · Chapter 15 Geoffrey Raymond
+
+- tactics
+- refrained
+- stifling
+- pricking
+- plead
+- scoundrel
+- widens
+- acquiesced
+- confide
+- dignified
+- frowning
+- tray
+- wrinkled
+- patted
+
+## The Murder of Roger Ackroyd · Chapter 16 An Evening at Mah Jong
+
+- partake
+- irritated
+- criticisms
+- acrimonious
+- disentangle
+- deuce
+- tabulated
+- tiles
+- idiosyncrasies
+- nasty
+- league
+- impertinent
+- shrewd
+- dislodges
+- ruffled
+- strained
+
+## The Murder of Roger Ackroyd · Chapter 17 Parker
+
+- exhilaration
 
 ## The Murder of Roger Ackroyd · Chapter 5 Murder
 

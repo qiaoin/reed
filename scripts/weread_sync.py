@@ -32,6 +32,7 @@ LOG_CSV = ROOT / "log" / "reading-log.csv"
 MARKS_CSV = ROOT / "log" / "weread-marks.csv"
 OPEN_MD = ROOT / "log" / "open-words.md"
 SESSIONS_CSV = ROOT / "log" / "weread-sessions.csv"
+OVERRIDES_CSV = ROOT / "log" / "date-overrides.csv"
 CONTAINER = Path.home() / "Library/Containers/com.tencent.weread/Data/Documents"
 SESSION_GAP_MIN = 20
 DEFERRED_COLOR = 4  # 绿色 = 不认识但没查；其他任何颜色都算已处理
@@ -74,6 +75,36 @@ def match_book(wx_title: str, wx_id: str, books: list[dict]) -> dict | None:
     names = [r["title"] for r in books]
     close = difflib.get_close_matches(wx_title, names, n=1, cutoff=0.9)
     return next((r for r in books if r["title"] == close[0]), None) if close else None
+
+
+def load_date_overrides() -> dict[tuple[str, date], date]:
+    """用户自己记的「哪一晚读的」和微信读书时间戳不一致时，在这里改日期。
+
+    log/date-overrides.csv: book,from_date,to_date,note
+    只挪日期，不动钟点；同步时优先于划线时间戳。
+    """
+    if not OVERRIDES_CSV.exists():
+        return {}
+    overrides: dict[tuple[str, date], date] = {}
+    with OVERRIDES_CSV.open(encoding="utf-8-sig", newline="") as fh:
+        for row in csv.DictReader(fh):
+            book = (row.get("book") or "").strip()
+            src = (row.get("from_date") or "").strip()
+            dst = (row.get("to_date") or "").strip()
+            if not (book and src and dst):
+                continue
+            try:
+                overrides[(book, date.fromisoformat(src))] = date.fromisoformat(dst)
+            except ValueError:
+                continue
+    return overrides
+
+
+def apply_date_overrides(marks: list[dict], title: str, overrides: dict[tuple[str, date], date]) -> None:
+    for mark in marks:
+        target = overrides.get((title, mark["time"].date()))
+        if target:
+            mark["time"] = datetime.combine(target, mark["time"].time())
 
 
 def ts_to_dt(value: float) -> datetime:
@@ -190,6 +221,7 @@ def main() -> None:
     tmp = snapshot(db)
     conn = sqlite3.connect(str(tmp / db.name))
     books = load_books()
+    overrides = load_date_overrides()
 
     wx_books = conn.execute(
         "select bookId, title from WRBook "
@@ -218,6 +250,7 @@ def main() -> None:
             unknown.append(f"{wx_title}  (bookId={book_id}, {len(marks)} 条划线)")
             continue
         title = row["title"]
+        apply_date_overrides(marks, title, overrides)
         slot = (row.get("slot") or "main").strip() or "main"
         book_words = int(float(row["words"] or 60000))
         allocated = allocate(marks, read_chapters(conn, str(book_id)), book_words)

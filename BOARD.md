@@ -56,7 +56,8 @@ python3 scripts/stats.py --days 7   # 出周报
 
 > 换书池：[SHELF.md](SHELF.md) — 微信读书 40 个书单里筛出的 61 本英文原著候选（读过 / 未读、阶段、Lexile）。
 > 睡前轨（与主线并行，不算 WIP）：**已完成 2/13** — The Magic Finger（30 分钟 / 查 0）、The Giraffe and the Pelly and Me（83 分钟 / 查 0）。
-> 下一本：**Esio Trot**（5k / 740L，预计 2 晚）。顺序见 [BEDTIME.md](BEDTIME.md)。
+> **在读**：Esio Trot —— 11-23 7 分钟 + 11-24 16 分钟，进度 37%（App）。
+> 睡前规矩是 0 查词，这两晚查了 3 个。顺序见 [BEDTIME.md](BEDTIME.md)。
 
 ---
 
