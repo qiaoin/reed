@@ -12,9 +12,10 @@ P2,3,"The Lion, the Witch and the Wardrobe",C. S. Lewis,38000,940L,2.5,queued,�
 P2,4,Prince Caspian,C. S. Lewis,45000,870L,3,queued,可能看过,中世纪叙事；句法变旧,,main
 P2,5,The Voyage of the Dawn Treader,C. S. Lewis,50000,970L,3,queued,可能看过,单元式结构；每章一个岛,,main
 P2,6,Harry Potter and the Prisoner of Azkaban,J. K. Rowling,107000,880L,3,queued,看过影视,十万词长跑；P2 期末考,,main
-P3,1,The Fellowship of the Ring,J. R. R. Tolkien,180000,860L,4.5,queued,看过影视,史诗开篇；诗歌可整段跳,,main
-P3,2,The Two Towers,J. R. R. Tolkien,155000,860L,4.5,queued,看过影视,双线叙事；长句耐力,,main
-P3,3,The Long Goodbye,Raymond Chandler,105000,,4.5,queued,可能看过影视,硬汉派俚语与省略；最像听力,,main
+P3,1,Runaway,Alice Munro,84000,,4,queued,未读中文,短篇集；8 篇独立；时间跳跃与留白；P3 开篇换挡,,main
+P3,2,The Fellowship of the Ring,J. R. R. Tolkien,180000,860L,4.5,queued,看过影视,史诗开篇；诗歌可整段跳,,main
+P3,3,The Two Towers,J. R. R. Tolkien,155000,860L,4.5,queued,看过影视,双线叙事；长句耐力,,main
+P3,4,The Long Goodbye,Raymond Chandler,105000,,4.5,queued,可能看过影视,硬汉派俚语与省略；最像听力,,main
 P4,1,Harry Potter and the Goblet of Fire,J. K. Rowling,190000,880L,3.5,queued,看过影视,十九万词耐力；P4 开场,,main
 P4,2,The Return of the King,J. R. R. Tolkien,130000,860L,4.5,queued,看过影视,三部曲收束,,main
 P4,3,The Remains of the Day,Kazuo Ishiguro,140000,1350L,5,queued,看过中文,不可靠叙述顶点；终考前的最后一关,,main
@@ -22,7 +23,7 @@ P4,4,Final Exam (TBD),自选,80000,,4,queued,必须未读,终考：陌生推理�
 EXT,1,Steve Jobs,Walter Isaacson,570000,1080L,4,queued,未读,2029 加时第一本（方案 A）,,main
 BED,1,The Enormous Crocodile,Roald Dahl,1000,600L,1,queued,可能看过,另购：一晚读完的开场,,bedtime
 BED,2,The Giraffe and the Pelly and Me,Roald Dahl,5000,740L,2,done,未读,诚品 16 册：2 晚,,bedtime
-BED,3,Esio Trot,Roald Dahl,5000,740L,2,reading,未读,诚品 16 册：2 晚,,bedtime
+BED,3,Esio Trot,Roald Dahl,5000,740L,2,done,未读,诚品 16 册：2 晚,,bedtime
 BED,4,The Twits,Roald Dahl,8000,750L,2,queued,未读,诚品 16 册：3 晚,,bedtime
 BED,5,Fantastic Mr Fox,Roald Dahl,9000,600L,2,queued,看过影视,诚品 16 册：4 晚,,bedtime
 BED,6,Billy and the Minpins,Roald Dahl,10000,700L,2.5,queued,未读,诚品 16 册：4 晚；晚期短篇,,bedtime

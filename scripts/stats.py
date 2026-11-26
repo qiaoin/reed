@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BOOKS_CSV = ROOT / "books.csv"
 LOG_CSV = ROOT / "log" / "reading-log.csv"
-TARGET_WORDS = 1_780_000
+TARGET_WORDS = 1_868_000
 PROJECT_START = date(2026, 11, 23)
 
 
@@ -41,7 +41,7 @@ PHASES = (
     Phase("P0", date(2026, 11, 23), date(2026, 11, 30), 999, 99.0, 8_000, "基线周"),
     Phase("P1", date(2026, 12, 1), date(2027, 5, 31), 6, 4.0, 402_000, "去敏期"),
     Phase("P2", date(2027, 6, 1), date(2027, 11, 30), 5, 2.5, 402_000, "建图期"),
-    Phase("P3", date(2027, 12, 1), date(2028, 5, 31), 4, 1.5, 440_000, "风格期"),
+    Phase("P3", date(2027, 12, 1), date(2028, 5, 31), 4, 1.5, 524_000, "风格期"),
     Phase("P4", date(2028, 6, 1), date(2028, 11, 30), 2, 1.0, 540_000, "沉浸期"),
 )
 
@@ -244,7 +244,7 @@ def report(entries: list[Entry], since: date, until: date) -> str:
     rate = all_words / span
     if rate > 0 and all_words < TARGET_WORDS and span >= 14:
         eta = until + timedelta(days=round((TARGET_WORDS - all_words) / rate))
-        lines.append(f"**预测** 按当前均速（{fmt_int(rate)} 词/天），约 {eta.strftime('%Y-%m')} 读完 1.78M 词")
+        lines.append(f"**预测** 按当前均速（{fmt_int(rate)} 词/天），约 {eta.strftime('%Y-%m')} 读完 1.87M 词")
     elif all_words < TARGET_WORDS:
         lines.append("**预测** 数据不足 14 天，暂不外推。")
 

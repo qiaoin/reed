@@ -57,9 +57,8 @@ python3 scripts/stats.py --days 7   # 出周报
 | Cards on the Table | | | |
 
 > 换书池：[SHELF.md](SHELF.md) — 微信读书 40 个书单里筛出的 61 本英文原著候选（读过 / 未读、阶段、Lexile）。
-> 睡前轨（与主线并行，不算 WIP）：**已完成 2/13** — The Magic Finger（30 分钟 / 查 0）、The Giraffe and the Pelly and Me（83 分钟 / 查 0）。
-> **在读**：Esio Trot —— 11-24 7 分钟 + 11-25 16 分钟，进度 50%（划线推算；App 显示 37%）。
-> 睡前规矩是 0 查词，这两晚查了 3 个。顺序见 [BEDTIME.md](BEDTIME.md)。
+> 睡前轨（与主线并行，不算 WIP）：**已完成 3/13** — The Magic Finger（30 分钟 / 查 0）、The Giraffe and the Pelly and Me（83 分钟 / 查 0）、Esio Trot（35 分钟 / 查 3）。
+> 下一本：**The Twits**（8k / 750L，预计 3 晚）。顺序见 [BEDTIME.md](BEDTIME.md)。
 
 ---
 
@@ -144,5 +143,5 @@ python3 scripts/stats.py --days 7   # 出周报
 |---|---|---:|---:|---:|---|---|
 | P1 | 2027-05-31 | 12.3k / 402k | 13.4 → 4.0 | 49 → 110 | 0 / 4 | |
 | P2 | 2027-11-30 | 0 / 402k |  |  | 0 / 4 | |
-| P3 | 2028-05-31 | 0 / 440k |  |  | 0 / 4 | |
+| P3 | 2028-05-31 | 0 / 524k |  |  | 0 / 4 | |
 | P4 | 2028-11-30 | 0 / 540k |  |  | 0 / 4 | 终考 |
