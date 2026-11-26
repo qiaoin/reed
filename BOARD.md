@@ -15,9 +15,9 @@ python3 scripts/stats.py --days 7   # 出周报
 
 | 书名 | 进度 | 读到 | 累计词数 | 累计查词 | 密度 | 阶段目标 |
 |---|---|---:|---:|---:|---:|---:|
-| The Murder of Roger Ackroyd | 65.4% | Chapter 16 | 49,013 | 198 查 / 222 留 | 4.0 /千词 | ≤ 4.0 |
+| The Murder of Roger Ackroyd | 70.9% | Chapter 17 | 52,523 | 200 查 / 239 留 | 3.8 /千词 | ≤ 4.0 |
 
-读完 16 章，剩 11 章 / 约 26k 词。
+读完 17 章，剩 10 章 / 约 22k 词。
 
 ---
 
@@ -33,6 +33,7 @@ python3 scripts/stats.py --days 7   # 出周报
 | 2026-11-23 | Roger Ackroyd | 44.0→53.5% | 7,118 | 66 | 0 / — | 42 |  |  | Ch11–13 有划线；Ch12 有一条长段标记 |
 | 2026-11-24 | Roger Ackroyd | 53.5→61.7% | 6,109 | 55 | 2 / — | 21 |  |  | Ch14–15：23 条划线（查 2 / 留 21） |
 | 2026-11-25 | Roger Ackroyd | 61.7→65.4% | 2,760 | 26 | 0 / — | 16 |  |  | Ch16 16 条绿标；Ch17 开头 2 条未记 |
+| 2026-11-26 | Roger Ackroyd | 66.2→70.9% | 3,510 | 31 | 2 / — | 17 |  |  | Ch17 19 条标记；2 查 |
 
 > 基线周不设配额（W0 只测，不管）。从 Chapter 4 起按「每章 10 个」执行，见 §D。
 
@@ -52,12 +53,12 @@ python3 scripts/stats.py --days 7   # 出周报
 
 | 📥 排队（最多 2 本） | 📖 在读（只能 1 本） | ✅ 本周读完 | 🗄 弃读（年度配额 1） |
 |---|---|---|---|
-| And Then There Were None | **The Murder of Roger Ackroyd** 65.4% | The Magic Finger、The Giraffe and the Pelly and Me | — |
+| And Then There Were None | **The Murder of Roger Ackroyd** 70.9% | The Magic Finger、The Giraffe and the Pelly and Me | — |
 | Cards on the Table | | | |
 
 > 换书池：[SHELF.md](SHELF.md) — 微信读书 40 个书单里筛出的 61 本英文原著候选（读过 / 未读、阶段、Lexile）。
 > 睡前轨（与主线并行，不算 WIP）：**已完成 2/13** — The Magic Finger（30 分钟 / 查 0）、The Giraffe and the Pelly and Me（83 分钟 / 查 0）。
-> **在读**：Esio Trot —— 11-23 7 分钟 + 11-24 16 分钟，进度 50%。
+> **在读**：Esio Trot —— 11-24 7 分钟 + 11-25 16 分钟，进度 50%（划线推算；App 显示 37%）。
 > 睡前规矩是 0 查词，这两晚查了 3 个。顺序见 [BEDTIME.md](BEDTIME.md)。
 
 ---
@@ -82,9 +83,10 @@ python3 scripts/stats.py --days 7   # 出周报
 | Ch14 Mrs Ackroyd | 3,343 | 8 | 2.4 | ✅ |
 | Ch15 Geoffrey Raymond | 2,766 | 16 | 5.8 | ✅ |
 | Ch16 An Evening at Mah Jong | 2,762 | 16 | 5.8 | ✅ |
-| Ch17–Ch27 | ~26,000 | 每章 ≤ 10 | — | 未开始 |
+| Ch17 Parker | 3,876 | 19 | 4.9 | ✅ |
+| Ch18–Ch27 | ~22,600 | 每章 ≤ 10 | — | 未开始 |
 
-**本阶段目标**：中断率从 20.4 压到 10 以下，再压到 4；当前 **4.0**，已到目标线。生词率另算，不设上限。
+**本阶段目标**：中断率从 20.4 压到 10 以下，再压到 4；当前 **3.8**，已低于目标 4.0。生词率另算，不设上限。
 
 ### 本周实验（Ch4 开始）
 
