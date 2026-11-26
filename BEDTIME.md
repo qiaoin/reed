@@ -48,7 +48,7 @@
 | 0 | The Enormous Crocodile | 1k | 600L | 1 | **盒子里没有**，可单买当开场 |
 | 1 | The Magic Finger ✅ | 2.5k | 560L | 1 | 已完成 |
 | 2 | The Giraffe and the Pelly and Me ✅ | 5k | 740L | 2 | 已完成（11-22 + 11-23 两晚） |
-| 3 | Esio Trot | 5k | 740L | 2 | 短 |
+| 3 | Esio Trot | 5k | 740L | 2 | 在读 50%（11-24） |
 | 4 | The Twits | 8k | 750L | 3 | 毒舌，节奏快 |
 | 5 | Fantastic Mr Fox | 9k | 600L | 4 | 电影熟悉 |
 | 6 | Billy and the Minpins | 10k | 700L | 4 | 晚期短篇，被低估 |

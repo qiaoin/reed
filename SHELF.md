@@ -1,6 +1,6 @@
 # 微信读书书单 · 英文原著候选池
 
-> 快照：2026-11-24 · 来源：本机微信读书库
+> 快照：2026-11-25 · 来源：本机微信读书库
 > 扫描范围：**40 个自建书单（472 本）** + 书架 1,232 本（其中英文原著 23 本）。
 > 用途：**备选池**，不是新书单。BOARD 的 WIP 仍然是 1 本；这里只回答「下一本可以换什么」。
 
@@ -48,7 +48,7 @@ Five Little Pigs 630L · Appointment with Death 680L · Murder on the Links 730L
 | Cards on the Table | 牌中牌 | Agatha Christie | 680L | 60k | 未读 | 无 | 四侦探四嫌疑人；已在计划 |
 | Endless Night | 无尽长夜 | Agatha Christie | 700L | 70k | 未读 | 无 | 哥特；非系列；已在计划 |
 | Crooked House | 畸形屋 | Agatha Christie | 700L | 70k | 未读 | 无 | 家族密室；已在计划 |
-| The Murder of Roger Ackroyd | 罗杰疑案 | Agatha Christie | 700L | 75k | 英文在读 61.7% | 有 | 进行中；不可靠叙述 |
+| The Murder of Roger Ackroyd | 罗杰疑案 | Agatha Christie | 700L | 75k | 英文在读 65.4% | 有 | 进行中；不可靠叙述 |
 | The Body in the Library | 藏书室女尸 | Agatha Christie | 710L | 50k | 未读 | 无 | 马普尔；短 |
 | Sleeping Murder | 沉睡的谋杀 | Agatha Christie | 720L | 65k | 未读 | 无 | 马普尔；记忆不可靠 |
 | The Murder on the Links | 高尔夫球场命案 | Agatha Christie | 730L | 60k | 中文读完 | 无 | 波洛早期；黑斯廷斯视角 |
