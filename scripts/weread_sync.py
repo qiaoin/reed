@@ -259,14 +259,16 @@ def main() -> None:
 
         # 划线只能推出「读过哪些章」，推不出结尾：书读完时用微信读书的
         # finishReading 把最后一天校准到 100%，按比例回填其余各天。
-        finished = conn.execute(
-            "select finishReading from WRBook where bookId=?", (str(book_id),)
+        state = conn.execute(
+            "select finishReading, readProgress from WRBook where bookId=?", (str(book_id),)
         ).fetchone()
-        if finished and finished[0] and cum_by_day:
+        # 只在「App 也认为读完了」（进度 ≥95%）时校准到 100%：
+        # 若收尾那一晚没有划线，剩下的部分应记在那一天，推迟到下一晚再算。
+        if state and state[0] and (state[1] or 0) >= 95 and cum_by_day:
             last_day = max(cum_by_day)
             last_pct = cum_by_day[last_day] / book_words
             if 0 < last_pct < 1:
-                k = min(1.0 / last_pct, 1.6)
+                k = min(1.0 / last_pct, 5.0)
                 words_by_day = {d: w * k for d, w in words_by_day.items()}
                 cum_by_day = {d: c * k for d, c in cum_by_day.items()}
 
