@@ -39,6 +39,8 @@ def _phase_plans() -> dict[str, int]:
             code = (row.get("phase") or "").strip().upper()
             if code not in ("P1", "P2", "P3", "P4"):
                 continue
+            if (row.get("slot") or "main").strip() not in ("", "main"):
+                continue  # 睡前 / 其他轨道不占主线词数
             try:
                 plans[code] = plans.get(code, 0) + int(float((row.get("words") or "0").strip() or 0))
             except ValueError:
