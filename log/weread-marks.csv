@@ -1,480 +1,601 @@
-datetime,book,chapter,text,status
-2026-11-20 13:49:27,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,latchkey,查
-2026-11-20 13:50:25,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,deemed,查
-2026-11-20 13:51:10,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,precaution,查
-2026-11-20 13:51:29,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,chill,查
-2026-11-20 13:52:29,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,foresaw,查
-2026-11-20 13:53:15,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,emphatically,查
-2026-11-20 13:53:45,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,instinct,查
-2026-11-20 13:54:23,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,stirring,查
-2026-11-20 13:55:02,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rattle,查
-2026-11-20 13:56:28,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,motto,查
-2026-11-20 13:59:06,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,crest,查
-2026-11-20 13:59:23,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rampant,查
-2026-11-20 14:00:07,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,placidly,查
-2026-11-20 14:00:37,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,servants,查
-2026-11-20 14:00:49,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,tradesmen,查
-2026-11-20 14:01:54,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,trait,查
-2026-11-20 14:02:19,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,pangs,查
-2026-11-20 14:02:38,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,indecision,查
-2026-11-20 14:03:26,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,demise,查
-2026-11-20 14:04:24,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,discretion,查
-2026-11-20 14:06:37,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,asserted,查
-2026-11-20 14:08:35,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,scorns,查
-2026-11-20 14:09:02,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,invariable,查
-2026-11-20 14:09:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rejoinder,查
-2026-11-20 14:10:10,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,acute,查
-2026-11-20 14:10:34,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,habitual,查
-2026-11-20 14:11:00,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,symptoms,查
-2026-11-20 14:11:34,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,accusation,查
-2026-11-20 19:10:09,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,bacon,查
-2026-11-20 19:10:18,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,hastily,查
-2026-11-20 19:10:46,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,inveterate,查
-2026-11-20 19:11:41,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,quivered,查
-2026-11-20 19:12:50,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,clairvoyant,查
-2026-11-20 19:13:15,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,inquired,查
-2026-11-20 19:13:21,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,sarcastically,查
-2026-11-20 19:13:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,Sarcasm,查
-2026-11-20 19:15:31,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rouse,查
-2026-11-20 19:15:56,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,fury,查
-2026-11-20 19:16:05,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,denial,查
-2026-11-20 19:16:46,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,burst,查
-2026-11-20 19:16:50,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,indignant,查
-2026-11-20 19:18:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rhyme,查
-2026-11-20 19:18:53,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,widow,查
-2026-11-20 19:19:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,absurd,查
-2026-11-20 19:20:49,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,diagnosis,查
-2026-11-20 19:21:17,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,Remorse,查
-2026-11-20 19:22:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,repentance,查
-2026-11-20 19:22:35,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,sentimentality,查
-2026-11-20 19:23:46,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,nerves,查
-2026-11-20 19:23:53,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,impulse,查
-2026-11-20 19:24:14,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,endure,查
-2026-11-20 19:24:41,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,haunted,查
-2026-11-20 19:25:27,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,indulge,查
-2026-11-20 19:25:53,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,firm,查
-2026-11-20 19:26:47,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,trying,查
-2026-11-20 19:27:57,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,precious,查
-2026-11-20 19:28:07,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,humbug,查
-2026-11-20 19:28:20,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,inquest,查
-2026-11-20 22:24:26,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,geography,查
-2026-11-20 22:25:27,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,rival,查
-2026-11-20 22:27:59,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,squire,查
-2026-11-20 22:29:04,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,revues,查
-2026-11-20 22:29:36,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,immensely,查
-2026-11-20 22:29:43,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,manufacturer,查
-2026-11-20 22:29:52,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,wagon,查
-2026-11-20 22:29:58,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,wheels,查
-2026-11-20 22:30:45,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,vicar,查
-2026-11-20 22:31:23,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,hand and glove,查
-2026-11-20 22:33:25,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,bluntly,查
-2026-11-20 22:33:34,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,dipsomaniac,查
-2026-11-20 22:33:47,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,grave,查
-2026-11-20 22:35:40,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,fond,查
-2026-11-20 22:36:26,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,intimacy,查
-2026-11-20 22:36:56,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,conjectured,查
-2026-11-20 22:38:03,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,a certain fitness in the thing,查
-2026-11-20 22:39:46,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,endured,查
-2026-11-20 22:39:52,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,spouses,查
-2026-11-20 22:40:39,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,halo,查
-2026-11-20 22:42:50,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,presided,查
-2026-11-20 22:43:15,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,suspicion,查
-2026-11-20 22:43:22,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,cronies,查
-2026-11-20 22:44:09,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,reigned,查
-2026-11-20 22:44:16,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,undisputed,查
-2026-11-20 22:49:58,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,limelight,查
-2026-11-20 22:50:03,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,fatal,查
-2026-11-20 22:51:19,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,quarrelled,查
-2026-11-20 22:52:13,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,earnestly,查
-2026-11-20 22:52:29,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,foreboding,查
-2026-11-20 22:52:37,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,swept,查
-2026-11-20 23:02:38,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,obliged,查
-2026-11-20 23:04:39,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,prevalent,查
-2026-11-20 23:09:04,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,Marrows,查
-2026-11-20 23:21:11,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,departed,查
-2026-11-20 23:21:38,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,parting,查
-2026-11-20 23:23:28,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,Bitter,查
-2026-11-20 23:24:31,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,immense,查
-2026-11-21 10:46:46,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,forebore,查
-2026-11-21 10:47:04,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,diversion,查
-2026-11-21 10:47:16,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,flaws,查
-2026-11-21 11:10:41,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,annoyance,查
-2026-11-21 11:11:20,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,reed,查
-2026-11-21 11:12:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,joints,查
-2026-11-21 11:12:59,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,whitings,查
-2026-11-21 11:31:38,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,moustache,查
-2026-11-21 11:31:50,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,dissented,查
-2026-11-21 11:33:46,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,vacuum,查
-2026-11-21 11:34:18,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,meditated,查
-2026-11-21 11:34:32,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,loan,查
-2026-11-21 11:34:45,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,gleaming,查
-2026-11-21 11:35:35,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,exterminating,查
-2026-11-21 11:37:36,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,dandelion,查
-2026-11-21 11:37:57,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,whizzed,查
-2026-11-21 11:38:12,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,repellent,查
-2026-11-21 11:38:21,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,squelch,查
-2026-11-21 11:39:33,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,fell,查
-2026-11-21 11:41:35,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,pardons,查
-2026-11-21 11:42:11,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,cultivate,查
-2026-11-21 11:42:21,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,marrows,查
-2026-11-21 11:42:37,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,enrage,查
-2026-11-21 11:42:54,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,promenade,查
-2026-11-21 11:44:37,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,profuse,查
-2026-11-21 11:45:11,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,melt,查
-2026-11-21 11:45:31,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,wretched,查
-2026-11-21 11:45:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,endear,查
-2026-11-21 11:59:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,exclaimed,查
-2026-11-21 12:00:01,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,disquiet,查
-2026-11-21 12:01:20,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,leisure,查
-2026-11-21 12:01:43,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,occupation,查
-2026-11-21 12:01:55,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,yearns,查
-2026-11-21 12:02:54,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,legacy,查
-2026-11-21 12:03:53,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,toil,查
-2026-11-21 12:16:14,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,imbecility,查
-2026-11-21 12:18:08,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,sympathetically,查
-2026-11-21 12:18:33,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,substance,查
-2026-11-21 12:18:47,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,speculated,查
-2026-11-21 12:19:50,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,entertained,查
-2026-11-21 12:24:18,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,portentously,查
-2026-11-21 12:24:30,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,solemn,查
-2026-11-21 12:25:02,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,fathom,查
-2026-11-21 12:35:19,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,insanity,查
-2026-11-21 12:35:54,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,folly,查
-2026-11-21 12:36:03,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,vanity,查
-2026-11-21 12:36:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,flourish,查
-2026-11-21 12:37:11,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,immense,查
-2026-11-21 12:37:22,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,specimen,查
-2026-11-21 12:37:34,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,tribe,查
-2026-11-21 12:40:26,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,incognito,查
-2026-11-21 12:40:32,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,notoriety,查
-2026-11-21 12:40:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,mused,查
-2026-11-21 12:41:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,expectations,查
-2026-11-21 12:42:15,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,niece,查
-2026-11-21 12:52:02,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,vexing,查
-2026-11-21 12:52:29,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,barmaids,查
-2026-11-21 12:55:10,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,devoted,查
-2026-11-21 12:56:48,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,confounded,查
-2026-11-21 14:02:30,The Murder of Roger Ackroyd,I,admirable,留
-2026-11-21 14:02:38,The Murder of Roger Ackroyd,I,promptitude,留
-2026-11-21 14:04:03,The Murder of Roger Ackroyd,I,allusion,留
-2026-11-21 14:04:29,The Murder of Roger Ackroyd,I,summons,查
-2026-11-21 14:06:52,The Murder of Roger Ackroyd,I,collided,留
-2026-11-21 14:07:55,The Murder of Roger Ackroyd,I,stern,留
-2026-11-21 14:09:00,The Murder of Roger Ackroyd,I,vague,留
-2026-11-21 14:09:42,The Murder of Roger Ackroyd,I,strolled,留
-2026-11-21 14:10:57,The Murder of Roger Ackroyd,I,terrace,留
-2026-11-21 14:11:30,The Murder of Roger Ackroyd,I,amused,留
-2026-11-21 14:12:17,The Murder of Roger Ackroyd,I,lid,留
-2026-11-21 14:13:24,The Murder of Roger Ackroyd,I,bending,留
-2026-11-21 14:14:38,The Murder of Roger Ackroyd,I,heretical,留
-2026-11-21 14:14:56,The Murder of Roger Ackroyd,I,fuss,留
-2026-11-21 14:15:51,The Murder of Roger Ackroyd,I,The Mill on the Floss,留
-2026-11-21 14:16:32,The Murder of Roger Ackroyd,I,exquisitely,留
-2026-11-21 14:17:34,The Murder of Roger Ackroyd,I,yachting,留
-2026-11-21 14:18:41,The Murder of Roger Ackroyd,I,assorted,留
-2026-11-21 14:18:46,The Murder of Roger Ackroyd,I,knuckles,留
-2026-11-21 14:18:51,The Murder of Roger Ackroyd,I,squeeze,留
-2026-11-21 14:19:24,The Murder of Roger Ackroyd,I,relief,留
-2026-11-21 14:19:32,The Murder of Roger Ackroyd,I,tribute,留
-2026-11-21 14:20:33,The Murder of Roger Ackroyd,I,just a leetle peculiar about money,留
-2026-11-21 14:23:23,The Murder of Roger Ackroyd,I,jerkily,留
-2026-11-21 14:24:19,The Murder of Roger Ackroyd,I,alacrity,留
-2026-11-21 14:26:22,The Murder of Roger Ackroyd,I,preoccupied,查
-2026-11-21 14:26:29,The Murder of Roger Ackroyd,I,wretched,查
-2026-11-21 14:26:46,The Murder of Roger Ackroyd,I,taciturnity,留
-2026-11-21 14:26:52,The Murder of Roger Ackroyd,I,relapsed,留
-2026-11-21 14:28:07,The Murder of Roger Ackroyd,II,leather,留
-2026-11-21 14:28:24,The Murder of Roger Ackroyd,II,docketed and filed,留
-2026-11-21 14:29:55,The Murder of Roger Ackroyd,II,forebodings,查
-2026-11-21 14:29:59,The Murder of Roger Ackroyd,II,assailed,留
-2026-11-21 14:32:12,The Murder of Roger Ackroyd,II,straw,留
-2026-11-21 14:32:37,The Murder of Roger Ackroyd,II,averse,查
-2026-11-21 14:34:56,The Murder of Roger Ackroyd,II,consented,留
-2026-11-21 14:35:59,The Murder of Roger Ackroyd,II,repulsion,查
-2026-11-21 14:42:08,The Murder of Roger Ackroyd,II,accessory,查
-2026-11-21 14:42:19,The Murder of Roger Ackroyd,II,stunned,留
-2026-11-21 14:42:40,The Murder of Roger Ackroyd,II,steadfastly,留
-2026-11-21 14:42:49,The Murder of Roger Ackroyd,II,scoundrel,查
-2026-11-21 14:42:52,The Murder of Roger Ackroyd,II,blackmailing,查
-2026-11-21 14:43:52,The Murder of Roger Ackroyd,II,rake,留
-2026-11-21 14:44:17,The Murder of Roger Ackroyd,II,fastened,留
-2026-11-21 14:44:25,The Murder of Roger Ackroyd,II,obscene,留
-2026-11-21 14:44:32,The Murder of Roger Ackroyd,II,vulture,留
-2026-11-21 14:44:42,The Murder of Roger Ackroyd,II,scot,留
-2026-11-21 14:45:09,The Murder of Roger Ackroyd,II,zigzagged,留
-2026-11-21 14:45:12,The Murder of Roger Ackroyd,II,fro,留
-2026-11-21 14:46:41,The Murder of Roger Ackroyd,II,reckoned,留
-2026-11-21 14:46:46,The Murder of Roger Ackroyd,II,villain,留
-2026-11-21 15:10:00,The Murder of Roger Ackroyd,II,horror,查
-2026-11-21 16:36:53,The Murder of Roger Ackroyd,Chapter 5 Murder,wicked,留
-2026-11-21 16:39:58,The Murder of Roger Ackroyd,Chapter 5 Murder,rattled,留
-2026-11-21 16:41:26,The Murder of Roger Ackroyd,Chapter 5 Murder,assault,留
-2026-11-21 16:41:35,The Murder of Roger Ackroyd,Chapter 5 Murder,hurled,留
-2026-11-21 16:42:13,The Murder of Roger Ackroyd,Chapter 5 Murder,recumbent,查
-2026-11-21 16:42:26,The Murder of Roger Ackroyd,Chapter 5 Murder,butler,留
-2026-11-21 16:42:47,The Murder of Roger Ackroyd,Chapter 5 Murder,murmured,留
-2026-11-21 16:43:34,The Murder of Roger Ackroyd,Chapter 5 Murder,hiss,留
-2026-11-21 16:43:53,The Murder of Roger Ackroyd,Chapter 5 Murder,hilt,查
-2026-11-21 16:43:57,The Murder of Roger Ackroyd,Chapter 5 Murder,stretched,留
-2026-11-21 16:44:17,The Murder of Roger Ackroyd,Chapter 5 Murder,perspiring,留
-2026-11-21 16:44:21,The Murder of Roger Ackroyd,Chapter 5 Murder,brow,留
-2026-11-21 16:46:58,The Murder of Roger Ackroyd,Chapter 5 Murder,composure,查
-2026-11-21 16:48:35,The Murder of Roger Ackroyd,Chapter 5 Murder,tampered,查
-2026-11-21 16:50:08,The Murder of Roger Ackroyd,Chapter 5 Murder,inspector,留
-2026-11-21 16:52:48,The Murder of Roger Ackroyd,Chapter 5 Murder,curtains,留
-2026-11-21 16:52:58,The Murder of Roger Ackroyd,Chapter 5 Murder,threw,留
-2026-11-21 16:53:17,The Murder of Roger Ackroyd,Chapter 5 Murder,sash,查
-2026-11-21 16:53:28,The Murder of Roger Ackroyd,Chapter 5 Murder,extent,留
-2026-11-21 16:53:47,The Murder of Roger Ackroyd,Chapter 5 Murder,torch,留
-2026-11-21 16:54:23,The Murder of Roger Ackroyd,Chapter 5 Murder,soles,查
-2026-11-21 16:56:25,The Murder of Roger Ackroyd,Chapter 5 Murder,inquiries,查
-2026-11-21 16:58:27,The Murder of Roger Ackroyd,Chapter 5 Murder,jerked,留
-2026-11-21 17:02:32,The Murder of Roger Ackroyd,Chapter 5 Murder,absorption,查
-2026-11-21 17:04:31,The Murder of Roger Ackroyd,Chapter 5 Murder,stammer,留
-2026-11-21 17:04:37,The Murder of Roger Ackroyd,Chapter 5 Murder,shook,留
-2026-11-21 17:05:27,The Murder of Roger Ackroyd,Chapter 5 Murder,flustered,查
-2026-11-21 17:05:54,The Murder of Roger Ackroyd,Chapter 5 Murder,precaution,查
-2026-11-21 17:14:33,The Murder of Roger Ackroyd,Chapter 5 Murder,grunt,留
-2026-11-21 17:16:25,The Murder of Roger Ackroyd,Chapter 5 Murder,fainted,留
-2026-11-21 17:16:47,The Murder of Roger Ackroyd,Chapter 5 Murder,revived,留
-2026-11-21 18:51:15,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,vague,查
-2026-11-21 18:51:33,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,collar,留
-2026-11-21 18:52:14,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,conceal,查
-2026-11-21 18:53:52,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,eavesdropping,查
-2026-11-21 18:54:46,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,garbled,留
-2026-11-21 18:54:51,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,wind up,留
-2026-11-21 18:54:55,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,plumped out,留
-2026-11-21 18:56:43,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,elastic,留
-2026-11-21 18:58:11,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,uproar,留
-2026-11-21 18:58:17,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,choleric,查
-2026-11-21 19:14:13,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,slip,留
-2026-11-21 19:14:38,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,astride,留
-2026-11-21 19:15:26,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,curio,留
-2026-11-21 19:16:34,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,bent down,留
-2026-11-21 19:18:01,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,inquest,查
-2026-11-21 19:18:28,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,blow,留
-2026-11-21 19:18:40,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,assailant,查
-2026-11-21 19:19:08,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,dagger,查
-2026-11-21 19:21:48,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,devoid,查
-2026-11-21 19:22:19,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,thrilled,留
-2026-11-21 19:22:33,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,mug,留
-2026-11-21 19:33:17,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,glided,留
-2026-11-21 19:33:48,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,ajar,查
-2026-11-21 19:35:40,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,oblige,留
-2026-11-21 19:36:19,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,grin,留
-2026-11-21 19:36:39,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,buoyant,留
-2026-11-21 19:37:03,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,resilience,留
-2026-11-21 19:38:11,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,obscure,查
-2026-11-22 10:30:45,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,awe,查
-2026-11-22 11:43:30,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,concealed,查
-2026-11-22 11:44:08,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,faded,留
-2026-11-22 11:46:08,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,fogey,查
-2026-11-22 11:46:13,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,Extraordinary,留
-2026-11-22 11:47:22,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,persuade,留
-2026-11-22 11:48:06,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,grudgingly,查
-2026-11-22 11:49:04,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,sprang,留
-2026-11-22 11:49:42,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,heeded,查
-2026-11-22 11:50:14,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,momentarily,留
-2026-11-22 11:50:47,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,astounded,查
-2026-11-22 11:51:28,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,luggage,留
-2026-11-22 11:51:31,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,stamped,留
-2026-11-22 11:51:53,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,tack,留
-2026-11-22 11:53:29,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,extravagant,留
-2026-11-22 11:53:33,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,nicest,留
-2026-11-22 11:53:52,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,restrained,留
-2026-11-22 11:54:40,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,ushered,查
-2026-11-22 11:55:05,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,tragedy,留
-2026-11-22 11:55:18,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,mademoiselle,查
-2026-11-22 11:57:49,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,imperious,查
-2026-11-22 11:58:39,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,Reassure,留
-2026-11-22 12:01:17,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,amateurs,留
-2026-11-22 12:01:46,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,stolidity,查
-2026-11-22 12:06:02,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,stoop,留
-2026-11-22 12:10:51,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,faint,查
-2026-11-22 12:16:53,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,admitted,留
-2026-11-22 12:18:24,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,departure,留
-2026-11-22 12:19:39,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,animated,留
-2026-11-22 15:52:45,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,sanguine,留
-2026-11-22 15:53:04,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,mere,留
-2026-11-22 15:53:31,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,junction,留
-2026-11-22 15:53:44,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,shunted,留
-2026-11-22 15:54:47,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,bustle,留
-2026-11-22 15:57:33,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,peculiar,留
-2026-11-22 15:59:20,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,debonair,留
-2026-11-22 15:59:49,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,acquaintance,留
-2026-11-22 16:04:48,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,solicitor,留
-2026-11-22 16:06:27,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,tongue,留
-2026-11-22 16:08:56,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,trespass,留
-2026-11-22 16:56:08,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,starch,留
-2026-11-22 17:08:26,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,thrust,留
-2026-11-22 17:13:04,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,latter,留
-2026-11-22 17:25:59,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,compliment,留
-2026-11-22 17:26:34,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,blushes,留
-2026-11-22 17:28:31,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,extravagantly,留
-2026-11-22 18:38:42,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,Parlourmaid,留
-2026-11-22 18:39:12,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,chin,留
-2026-11-22 18:39:49,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,perplexity,留
-2026-11-22 18:40:17,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,My poor nerves.,留
-2026-11-22 18:40:29,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,wreck,留
-2026-11-22 18:40:38,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,dreadful,留
-2026-11-22 18:41:34,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,intruding,留
-2026-11-22 18:42:23,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,aback,留
-2026-11-22 18:44:36,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,interest,留
-2026-11-22 18:45:42,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,irises,留
-2026-11-22 18:51:53,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,narrated,留
-2026-11-22 18:54:21,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,peculiar,留
-2026-11-22 18:55:09,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,resented,留
-2026-11-22 18:56:27,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,queer,留
-2026-11-22 18:57:46,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,rectitude,留
-2026-11-22 18:58:04,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,stemming,留
-2026-11-22 18:58:20,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,seized,留
-2026-11-22 18:59:20,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,drily,留
-2026-11-22 19:04:27,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,bulgy,留
-2026-11-22 19:12:58,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,trivial,留
-2026-11-22 19:14:56,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,alibi,留
-2026-11-22 19:15:14,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,confess,留
-2026-11-22 19:15:29,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,frowned,留
-2026-11-22 19:15:33,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,murmured,留
-2026-11-22 19:16:29,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,muttering,留
-2026-11-22 19:17:01,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,whirled,留
-2026-11-22 19:30:36,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,flare up,留
-2026-11-23 08:18:20,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,intelligible,留
-2026-11-23 08:18:26,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,meditations,留
-2026-11-23 08:18:33,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,advent,留
-2026-11-23 08:18:53,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,mistress,留
-2026-11-23 08:20:03,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,utterance,留
-2026-11-23 08:20:05,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,vanished,留
-2026-11-23 08:20:12,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,cordiality,留
-2026-11-23 08:22:35,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,deception,留
-2026-11-23 08:28:16,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,strained,留
-2026-11-23 08:28:25,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,conveyed,留
-2026-11-23 08:28:28,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,innuendoes,留
-2026-11-23 08:28:37,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,coarse,留
-2026-11-23 08:29:44,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,grumpy,留
-2026-11-23 08:33:54,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,halter,留
-2026-11-23 13:07:06,The Murder of Roger Ackroyd,Chapter 12 Round the Table,probable,留
-2026-11-23 13:11:52,The Murder of Roger Ackroyd,Chapter 12 Round the Table,irrelevant,留
-2026-11-23 13:12:13,The Murder of Roger Ackroyd,Chapter 12 Round the Table,harps,留
+datetime,book,chapter,text,status,slot
+2026-11-20 13:49:27,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,latchkey,查,main
+2026-11-20 13:50:25,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,deemed,查,main
+2026-11-20 13:51:10,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,precaution,查,main
+2026-11-20 13:51:29,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,chill,查,main
+2026-11-20 13:52:29,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,foresaw,查,main
+2026-11-20 13:53:15,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,emphatically,查,main
+2026-11-20 13:53:45,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,instinct,查,main
+2026-11-20 13:54:23,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,stirring,查,main
+2026-11-20 13:55:02,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rattle,查,main
+2026-11-20 13:56:28,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,motto,查,main
+2026-11-20 13:59:06,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,crest,查,main
+2026-11-20 13:59:23,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rampant,查,main
+2026-11-20 14:00:07,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,placidly,查,main
+2026-11-20 14:00:37,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,servants,查,main
+2026-11-20 14:00:49,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,tradesmen,查,main
+2026-11-20 14:01:54,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,trait,查,main
+2026-11-20 14:02:19,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,pangs,查,main
+2026-11-20 14:02:38,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,indecision,查,main
+2026-11-20 14:03:26,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,demise,查,main
+2026-11-20 14:04:24,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,discretion,查,main
+2026-11-20 14:06:37,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,asserted,查,main
+2026-11-20 14:08:35,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,scorns,查,main
+2026-11-20 14:09:02,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,invariable,查,main
+2026-11-20 14:09:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rejoinder,查,main
+2026-11-20 14:10:10,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,acute,查,main
+2026-11-20 14:10:34,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,habitual,查,main
+2026-11-20 14:11:00,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,symptoms,查,main
+2026-11-20 14:11:34,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,accusation,查,main
+2026-11-20 19:10:09,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,bacon,查,main
+2026-11-20 19:10:18,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,hastily,查,main
+2026-11-20 19:10:46,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,inveterate,查,main
+2026-11-20 19:11:41,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,quivered,查,main
+2026-11-20 19:12:50,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,clairvoyant,查,main
+2026-11-20 19:13:15,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,inquired,查,main
+2026-11-20 19:13:21,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,sarcastically,查,main
+2026-11-20 19:13:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,Sarcasm,查,main
+2026-11-20 19:15:31,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rouse,查,main
+2026-11-20 19:15:56,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,fury,查,main
+2026-11-20 19:16:05,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,denial,查,main
+2026-11-20 19:16:46,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,burst,查,main
+2026-11-20 19:16:50,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,indignant,查,main
+2026-11-20 19:18:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,rhyme,查,main
+2026-11-20 19:18:53,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,widow,查,main
+2026-11-20 19:19:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,absurd,查,main
+2026-11-20 19:20:49,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,diagnosis,查,main
+2026-11-20 19:21:17,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,Remorse,查,main
+2026-11-20 19:22:30,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,repentance,查,main
+2026-11-20 19:22:35,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,sentimentality,查,main
+2026-11-20 19:23:46,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,nerves,查,main
+2026-11-20 19:23:53,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,impulse,查,main
+2026-11-20 19:24:14,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,endure,查,main
+2026-11-20 19:24:41,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,haunted,查,main
+2026-11-20 19:25:27,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,indulge,查,main
+2026-11-20 19:25:53,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,firm,查,main
+2026-11-20 19:26:47,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,trying,查,main
+2026-11-20 19:27:57,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,precious,查,main
+2026-11-20 19:28:07,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,humbug,查,main
+2026-11-20 19:28:20,The Murder of Roger Ackroyd,Chapter 1 Dr Sheppard at the Breakfast Table,inquest,查,main
+2026-11-20 22:24:26,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,geography,查,main
+2026-11-20 22:25:27,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,rival,查,main
+2026-11-20 22:27:59,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,squire,查,main
+2026-11-20 22:29:04,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,revues,查,main
+2026-11-20 22:29:36,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,immensely,查,main
+2026-11-20 22:29:43,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,manufacturer,查,main
+2026-11-20 22:29:52,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,wagon,查,main
+2026-11-20 22:29:58,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,wheels,查,main
+2026-11-20 22:30:45,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,vicar,查,main
+2026-11-20 22:31:23,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,hand and glove,查,main
+2026-11-20 22:33:25,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,bluntly,查,main
+2026-11-20 22:33:34,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,dipsomaniac,查,main
+2026-11-20 22:33:47,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,grave,查,main
+2026-11-20 22:35:40,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,fond,查,main
+2026-11-20 22:36:26,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,intimacy,查,main
+2026-11-20 22:36:56,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,conjectured,查,main
+2026-11-20 22:38:03,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,a certain fitness in the thing,查,main
+2026-11-20 22:39:46,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,endured,查,main
+2026-11-20 22:39:52,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,spouses,查,main
+2026-11-20 22:40:39,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,halo,查,main
+2026-11-20 22:42:50,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,presided,查,main
+2026-11-20 22:43:15,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,suspicion,查,main
+2026-11-20 22:43:22,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,cronies,查,main
+2026-11-20 22:44:09,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,reigned,查,main
+2026-11-20 22:44:16,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,undisputed,查,main
+2026-11-20 22:49:58,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,limelight,查,main
+2026-11-20 22:50:03,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,fatal,查,main
+2026-11-20 22:51:19,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,quarrelled,查,main
+2026-11-20 22:52:13,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,earnestly,查,main
+2026-11-20 22:52:29,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,foreboding,查,main
+2026-11-20 22:52:37,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,swept,查,main
+2026-11-20 23:02:38,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,obliged,查,main
+2026-11-20 23:04:39,The Murder of Roger Ackroyd,Chapter 2 Who’s Who in King’s Abbot,prevalent,查,main
+2026-11-20 23:09:04,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,Marrows,查,main
+2026-11-20 23:21:11,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,departed,查,main
+2026-11-20 23:21:38,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,parting,查,main
+2026-11-20 23:23:28,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,Bitter,查,main
+2026-11-20 23:24:31,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,immense,查,main
+2026-11-21 10:46:46,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,forebore,查,main
+2026-11-21 10:47:04,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,diversion,查,main
+2026-11-21 10:47:16,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,flaws,查,main
+2026-11-21 11:10:41,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,annoyance,查,main
+2026-11-21 11:11:20,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,reed,查,main
+2026-11-21 11:12:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,joints,查,main
+2026-11-21 11:12:59,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,whitings,查,main
+2026-11-21 11:31:38,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,moustache,查,main
+2026-11-21 11:31:50,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,dissented,查,main
+2026-11-21 11:33:46,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,vacuum,查,main
+2026-11-21 11:34:18,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,meditated,查,main
+2026-11-21 11:34:32,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,loan,查,main
+2026-11-21 11:34:45,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,gleaming,查,main
+2026-11-21 11:35:35,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,exterminating,查,main
+2026-11-21 11:37:36,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,dandelion,查,main
+2026-11-21 11:37:57,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,whizzed,查,main
+2026-11-21 11:38:12,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,repellent,查,main
+2026-11-21 11:38:21,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,squelch,查,main
+2026-11-21 11:39:33,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,fell,查,main
+2026-11-21 11:41:35,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,pardons,查,main
+2026-11-21 11:42:11,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,cultivate,查,main
+2026-11-21 11:42:21,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,marrows,查,main
+2026-11-21 11:42:37,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,enrage,查,main
+2026-11-21 11:42:54,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,promenade,查,main
+2026-11-21 11:44:37,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,profuse,查,main
+2026-11-21 11:45:11,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,melt,查,main
+2026-11-21 11:45:31,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,wretched,查,main
+2026-11-21 11:45:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,endear,查,main
+2026-11-21 11:59:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,exclaimed,查,main
+2026-11-21 12:00:01,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,disquiet,查,main
+2026-11-21 12:01:20,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,leisure,查,main
+2026-11-21 12:01:43,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,occupation,查,main
+2026-11-21 12:01:55,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,yearns,查,main
+2026-11-21 12:02:54,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,legacy,查,main
+2026-11-21 12:03:53,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,toil,查,main
+2026-11-21 12:16:14,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,imbecility,查,main
+2026-11-21 12:18:08,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,sympathetically,查,main
+2026-11-21 12:18:33,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,substance,查,main
+2026-11-21 12:18:47,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,speculated,查,main
+2026-11-21 12:19:50,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,entertained,查,main
+2026-11-21 12:24:18,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,portentously,查,main
+2026-11-21 12:24:30,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,solemn,查,main
+2026-11-21 12:25:02,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,fathom,查,main
+2026-11-21 12:35:19,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,insanity,查,main
+2026-11-21 12:35:54,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,folly,查,main
+2026-11-21 12:36:03,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,vanity,查,main
+2026-11-21 12:36:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,flourish,查,main
+2026-11-21 12:37:11,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,immense,查,main
+2026-11-21 12:37:22,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,specimen,查,main
+2026-11-21 12:37:34,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,tribe,查,main
+2026-11-21 12:40:26,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,incognito,查,main
+2026-11-21 12:40:32,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,notoriety,查,main
+2026-11-21 12:40:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,mused,查,main
+2026-11-21 12:41:51,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,expectations,查,main
+2026-11-21 12:42:15,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,niece,查,main
+2026-11-21 12:52:02,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,vexing,查,main
+2026-11-21 12:52:29,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,barmaids,查,main
+2026-11-21 12:55:10,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,devoted,查,main
+2026-11-21 12:56:48,The Murder of Roger Ackroyd,Chapter 3 The Man Who Grew Vegetable Marrows,confounded,查,main
+2026-11-21 14:02:30,The Murder of Roger Ackroyd,I,admirable,留,main
+2026-11-21 14:02:38,The Murder of Roger Ackroyd,I,promptitude,留,main
+2026-11-21 14:04:03,The Murder of Roger Ackroyd,I,allusion,留,main
+2026-11-21 14:04:29,The Murder of Roger Ackroyd,I,summons,查,main
+2026-11-21 14:06:52,The Murder of Roger Ackroyd,I,collided,留,main
+2026-11-21 14:07:55,The Murder of Roger Ackroyd,I,stern,留,main
+2026-11-21 14:09:00,The Murder of Roger Ackroyd,I,vague,留,main
+2026-11-21 14:09:42,The Murder of Roger Ackroyd,I,strolled,留,main
+2026-11-21 14:10:57,The Murder of Roger Ackroyd,I,terrace,留,main
+2026-11-21 14:11:30,The Murder of Roger Ackroyd,I,amused,留,main
+2026-11-21 14:12:17,The Murder of Roger Ackroyd,I,lid,留,main
+2026-11-21 14:13:24,The Murder of Roger Ackroyd,I,bending,留,main
+2026-11-21 14:14:38,The Murder of Roger Ackroyd,I,heretical,留,main
+2026-11-21 14:14:56,The Murder of Roger Ackroyd,I,fuss,留,main
+2026-11-21 14:15:51,The Murder of Roger Ackroyd,I,The Mill on the Floss,留,main
+2026-11-21 14:16:32,The Murder of Roger Ackroyd,I,exquisitely,留,main
+2026-11-21 14:17:34,The Murder of Roger Ackroyd,I,yachting,留,main
+2026-11-21 14:18:41,The Murder of Roger Ackroyd,I,assorted,留,main
+2026-11-21 14:18:46,The Murder of Roger Ackroyd,I,knuckles,留,main
+2026-11-21 14:18:51,The Murder of Roger Ackroyd,I,squeeze,留,main
+2026-11-21 14:19:24,The Murder of Roger Ackroyd,I,relief,留,main
+2026-11-21 14:19:32,The Murder of Roger Ackroyd,I,tribute,留,main
+2026-11-21 14:20:33,The Murder of Roger Ackroyd,I,just a leetle peculiar about money,留,main
+2026-11-21 14:23:23,The Murder of Roger Ackroyd,I,jerkily,留,main
+2026-11-21 14:24:19,The Murder of Roger Ackroyd,I,alacrity,留,main
+2026-11-21 14:26:22,The Murder of Roger Ackroyd,I,preoccupied,查,main
+2026-11-21 14:26:29,The Murder of Roger Ackroyd,I,wretched,查,main
+2026-11-21 14:26:46,The Murder of Roger Ackroyd,I,taciturnity,留,main
+2026-11-21 14:26:52,The Murder of Roger Ackroyd,I,relapsed,留,main
+2026-11-21 14:28:07,The Murder of Roger Ackroyd,II,leather,留,main
+2026-11-21 14:28:24,The Murder of Roger Ackroyd,II,docketed and filed,留,main
+2026-11-21 14:29:55,The Murder of Roger Ackroyd,II,forebodings,查,main
+2026-11-21 14:29:59,The Murder of Roger Ackroyd,II,assailed,留,main
+2026-11-21 14:32:12,The Murder of Roger Ackroyd,II,straw,留,main
+2026-11-21 14:32:37,The Murder of Roger Ackroyd,II,averse,查,main
+2026-11-21 14:34:56,The Murder of Roger Ackroyd,II,consented,留,main
+2026-11-21 14:35:59,The Murder of Roger Ackroyd,II,repulsion,查,main
+2026-11-21 14:42:08,The Murder of Roger Ackroyd,II,accessory,查,main
+2026-11-21 14:42:19,The Murder of Roger Ackroyd,II,stunned,留,main
+2026-11-21 14:42:40,The Murder of Roger Ackroyd,II,steadfastly,留,main
+2026-11-21 14:42:49,The Murder of Roger Ackroyd,II,scoundrel,查,main
+2026-11-21 14:42:52,The Murder of Roger Ackroyd,II,blackmailing,查,main
+2026-11-21 14:43:52,The Murder of Roger Ackroyd,II,rake,留,main
+2026-11-21 14:44:17,The Murder of Roger Ackroyd,II,fastened,留,main
+2026-11-21 14:44:25,The Murder of Roger Ackroyd,II,obscene,留,main
+2026-11-21 14:44:32,The Murder of Roger Ackroyd,II,vulture,留,main
+2026-11-21 14:44:42,The Murder of Roger Ackroyd,II,scot,留,main
+2026-11-21 14:45:09,The Murder of Roger Ackroyd,II,zigzagged,留,main
+2026-11-21 14:45:12,The Murder of Roger Ackroyd,II,fro,留,main
+2026-11-21 14:46:41,The Murder of Roger Ackroyd,II,reckoned,留,main
+2026-11-21 14:46:46,The Murder of Roger Ackroyd,II,villain,留,main
+2026-11-21 15:10:00,The Murder of Roger Ackroyd,II,horror,查,main
+2026-11-21 16:36:53,The Murder of Roger Ackroyd,Chapter 5 Murder,wicked,留,main
+2026-11-21 16:39:58,The Murder of Roger Ackroyd,Chapter 5 Murder,rattled,留,main
+2026-11-21 16:41:26,The Murder of Roger Ackroyd,Chapter 5 Murder,assault,留,main
+2026-11-21 16:41:35,The Murder of Roger Ackroyd,Chapter 5 Murder,hurled,留,main
+2026-11-21 16:42:13,The Murder of Roger Ackroyd,Chapter 5 Murder,recumbent,查,main
+2026-11-21 16:42:26,The Murder of Roger Ackroyd,Chapter 5 Murder,butler,留,main
+2026-11-21 16:42:47,The Murder of Roger Ackroyd,Chapter 5 Murder,murmured,留,main
+2026-11-21 16:43:34,The Murder of Roger Ackroyd,Chapter 5 Murder,hiss,留,main
+2026-11-21 16:43:53,The Murder of Roger Ackroyd,Chapter 5 Murder,hilt,查,main
+2026-11-21 16:43:57,The Murder of Roger Ackroyd,Chapter 5 Murder,stretched,留,main
+2026-11-21 16:44:17,The Murder of Roger Ackroyd,Chapter 5 Murder,perspiring,留,main
+2026-11-21 16:44:21,The Murder of Roger Ackroyd,Chapter 5 Murder,brow,留,main
+2026-11-21 16:46:58,The Murder of Roger Ackroyd,Chapter 5 Murder,composure,查,main
+2026-11-21 16:48:35,The Murder of Roger Ackroyd,Chapter 5 Murder,tampered,查,main
+2026-11-21 16:50:08,The Murder of Roger Ackroyd,Chapter 5 Murder,inspector,留,main
+2026-11-21 16:52:48,The Murder of Roger Ackroyd,Chapter 5 Murder,curtains,留,main
+2026-11-21 16:52:58,The Murder of Roger Ackroyd,Chapter 5 Murder,threw,留,main
+2026-11-21 16:53:17,The Murder of Roger Ackroyd,Chapter 5 Murder,sash,查,main
+2026-11-21 16:53:28,The Murder of Roger Ackroyd,Chapter 5 Murder,extent,留,main
+2026-11-21 16:53:47,The Murder of Roger Ackroyd,Chapter 5 Murder,torch,留,main
+2026-11-21 16:54:23,The Murder of Roger Ackroyd,Chapter 5 Murder,soles,查,main
+2026-11-21 16:56:25,The Murder of Roger Ackroyd,Chapter 5 Murder,inquiries,查,main
+2026-11-21 16:58:27,The Murder of Roger Ackroyd,Chapter 5 Murder,jerked,留,main
+2026-11-21 17:02:32,The Murder of Roger Ackroyd,Chapter 5 Murder,absorption,查,main
+2026-11-21 17:04:31,The Murder of Roger Ackroyd,Chapter 5 Murder,stammer,留,main
+2026-11-21 17:04:37,The Murder of Roger Ackroyd,Chapter 5 Murder,shook,留,main
+2026-11-21 17:05:27,The Murder of Roger Ackroyd,Chapter 5 Murder,flustered,查,main
+2026-11-21 17:05:54,The Murder of Roger Ackroyd,Chapter 5 Murder,precaution,查,main
+2026-11-21 17:14:33,The Murder of Roger Ackroyd,Chapter 5 Murder,grunt,留,main
+2026-11-21 17:16:25,The Murder of Roger Ackroyd,Chapter 5 Murder,fainted,留,main
+2026-11-21 17:16:47,The Murder of Roger Ackroyd,Chapter 5 Murder,revived,留,main
+2026-11-21 18:51:15,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,vague,查,main
+2026-11-21 18:51:33,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,collar,留,main
+2026-11-21 18:52:14,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,conceal,查,main
+2026-11-21 18:53:52,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,eavesdropping,查,main
+2026-11-21 18:54:46,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,garbled,留,main
+2026-11-21 18:54:51,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,wind up,留,main
+2026-11-21 18:54:55,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,plumped out,留,main
+2026-11-21 18:56:43,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,elastic,留,main
+2026-11-21 18:58:11,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,uproar,留,main
+2026-11-21 18:58:17,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,choleric,查,main
+2026-11-21 19:14:13,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,slip,留,main
+2026-11-21 19:14:38,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,astride,留,main
+2026-11-21 19:15:26,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,curio,留,main
+2026-11-21 19:16:34,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,bent down,留,main
+2026-11-21 19:18:01,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,inquest,查,main
+2026-11-21 19:18:28,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,blow,留,main
+2026-11-21 19:18:40,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,assailant,查,main
+2026-11-21 19:19:08,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,dagger,查,main
+2026-11-21 19:21:48,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,devoid,查,main
+2026-11-21 19:22:19,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,thrilled,留,main
+2026-11-21 19:22:33,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,mug,留,main
+2026-11-21 19:33:17,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,glided,留,main
+2026-11-21 19:33:48,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,ajar,查,main
+2026-11-21 19:35:40,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,oblige,留,main
+2026-11-21 19:36:19,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,grin,留,main
+2026-11-21 19:36:39,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,buoyant,留,main
+2026-11-21 19:37:03,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,resilience,留,main
+2026-11-21 19:38:11,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,obscure,查,main
+2026-11-22 10:30:45,The Murder of Roger Ackroyd,Chapter 6 The Tunisian Dagger,awe,查,main
+2026-11-22 11:43:30,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,concealed,查,main
+2026-11-22 11:44:08,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,faded,留,main
+2026-11-22 11:46:08,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,fogey,查,main
+2026-11-22 11:46:13,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,Extraordinary,留,main
+2026-11-22 11:47:22,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,persuade,留,main
+2026-11-22 11:48:06,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,grudgingly,查,main
+2026-11-22 11:49:04,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,sprang,留,main
+2026-11-22 11:49:42,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,heeded,查,main
+2026-11-22 11:50:14,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,momentarily,留,main
+2026-11-22 11:50:47,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,astounded,查,main
+2026-11-22 11:51:28,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,luggage,留,main
+2026-11-22 11:51:31,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,stamped,留,main
+2026-11-22 11:51:53,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,tack,留,main
+2026-11-22 11:53:29,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,extravagant,留,main
+2026-11-22 11:53:33,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,nicest,留,main
+2026-11-22 11:53:52,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,restrained,留,main
+2026-11-22 11:54:40,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,ushered,查,main
+2026-11-22 11:55:05,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,tragedy,留,main
+2026-11-22 11:55:18,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,mademoiselle,查,main
+2026-11-22 11:57:49,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,imperious,查,main
+2026-11-22 11:58:39,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,Reassure,留,main
+2026-11-22 12:01:17,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,amateurs,留,main
+2026-11-22 12:01:46,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,stolidity,查,main
+2026-11-22 12:06:02,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,stoop,留,main
+2026-11-22 12:10:51,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,faint,查,main
+2026-11-22 12:16:53,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,admitted,留,main
+2026-11-22 12:18:24,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,departure,留,main
+2026-11-22 12:19:39,The Murder of Roger Ackroyd,Chapter 7 I Learn My Neighbour’s Profession,animated,留,main
+2026-11-22 15:52:45,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,sanguine,留,main
+2026-11-22 15:53:04,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,mere,留,main
+2026-11-22 15:53:31,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,junction,留,main
+2026-11-22 15:53:44,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,shunted,留,main
+2026-11-22 15:54:47,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,bustle,留,main
+2026-11-22 15:57:33,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,peculiar,留,main
+2026-11-22 15:59:20,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,debonair,留,main
+2026-11-22 15:59:49,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,acquaintance,留,main
+2026-11-22 16:04:48,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,solicitor,留,main
+2026-11-22 16:06:27,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,tongue,留,main
+2026-11-22 16:08:56,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,trespass,留,main
+2026-11-22 16:56:08,The Murder of Roger Ackroyd,Chapter 8 Inspector Raglan is Confident,starch,留,main
+2026-11-22 17:08:26,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,thrust,留,main
+2026-11-22 17:13:04,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,latter,留,main
+2026-11-22 17:25:59,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,compliment,留,main
+2026-11-22 17:26:34,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,blushes,留,main
+2026-11-22 17:28:31,The Murder of Roger Ackroyd,Chapter 9 The Goldfish Pond,extravagantly,留,main
+2026-11-22 18:38:42,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,Parlourmaid,留,main
+2026-11-22 18:39:12,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,chin,留,main
+2026-11-22 18:39:49,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,perplexity,留,main
+2026-11-22 18:40:17,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,My poor nerves.,留,main
+2026-11-22 18:40:29,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,wreck,留,main
+2026-11-22 18:40:38,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,dreadful,留,main
+2026-11-22 18:41:34,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,intruding,留,main
+2026-11-22 18:42:23,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,aback,留,main
+2026-11-22 18:44:36,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,interest,留,main
+2026-11-22 18:45:42,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,irises,留,main
+2026-11-22 18:51:53,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,narrated,留,main
+2026-11-22 18:54:21,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,peculiar,留,main
+2026-11-22 18:55:09,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,resented,留,main
+2026-11-22 18:56:27,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,queer,留,main
+2026-11-22 18:57:46,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,rectitude,留,main
+2026-11-22 18:58:04,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,stemming,留,main
+2026-11-22 18:58:20,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,seized,留,main
+2026-11-22 18:59:20,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,drily,留,main
+2026-11-22 19:04:27,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,bulgy,留,main
+2026-11-22 19:12:58,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,trivial,留,main
+2026-11-22 19:14:56,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,alibi,留,main
+2026-11-22 19:15:14,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,confess,留,main
+2026-11-22 19:15:29,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,frowned,留,main
+2026-11-22 19:15:33,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,murmured,留,main
+2026-11-22 19:16:29,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,muttering,留,main
+2026-11-22 19:17:01,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,whirled,留,main
+2026-11-22 19:30:36,The Murder of Roger Ackroyd,Chapter 10 The Parlourmaid,flare up,留,main
+2026-11-23 08:18:20,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,intelligible,留,main
+2026-11-23 08:18:26,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,meditations,留,main
+2026-11-23 08:18:33,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,advent,留,main
+2026-11-23 08:18:53,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,mistress,留,main
+2026-11-23 08:20:03,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,utterance,留,main
+2026-11-23 08:20:05,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,vanished,留,main
+2026-11-23 08:20:12,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,cordiality,留,main
+2026-11-23 08:22:35,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,deception,留,main
+2026-11-23 08:28:16,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,strained,留,main
+2026-11-23 08:28:25,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,conveyed,留,main
+2026-11-23 08:28:28,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,innuendoes,留,main
+2026-11-23 08:28:37,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,coarse,留,main
+2026-11-23 08:29:44,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,grumpy,留,main
+2026-11-23 08:33:54,The Murder of Roger Ackroyd,Chapter 11 Poirot Pays a Call,halter,留,main
+2026-11-23 13:07:06,The Murder of Roger Ackroyd,Chapter 12 Round the Table,probable,留,main
+2026-11-23 13:11:52,The Murder of Roger Ackroyd,Chapter 12 Round the Table,irrelevant,留,main
+2026-11-23 13:12:13,The Murder of Roger Ackroyd,Chapter 12 Round the Table,harps,留,main
 2026-11-23 13:17:36,The Murder of Roger Ackroyd,Chapter 12 Round the Table,"‘To make a confusing case even more confusing.’
 ‘Well,’ said the inspector. ‘I’ll look into it. What gave you the idea in the first place?’
 ‘When you were so kind as to show me the dagger and draw attention to the fingerprints. I know very little of loops and whorls—see, I confess my ignorance frankly. But it did occur to me that the position of the prints was somewhat awkward. Not so would I have held a dagger in order to strike. Naturally, with the right hand brought up over the shoulder backwards, it would have been difficult to put it in exactly the right position.’
-Inspector Raglan stared at the little man.",查
-2026-11-23 13:32:32,The Murder of Roger Ackroyd,Chapter 12 Round the Table,endeavoured,留
-2026-11-23 13:32:40,The Murder of Roger Ackroyd,Chapter 12 Round the Table,patronising,留
-2026-11-23 13:32:48,The Murder of Roger Ackroyd,Chapter 12 Round the Table,twinkling,留
-2026-11-23 13:40:50,The Murder of Roger Ackroyd,Chapter 12 Round the Table,reunion,留
-2026-11-23 13:42:09,The Murder of Roger Ackroyd,Chapter 12 Round the Table,persuade,留
-2026-11-23 17:35:23,The Murder of Roger Ackroyd,Chapter 12 Round the Table,whereabouts,留
-2026-11-23 17:36:43,The Murder of Roger Ackroyd,Chapter 12 Round the Table,entrap,留
-2026-11-23 17:37:32,The Murder of Roger Ackroyd,Chapter 12 Round the Table,hardened,留
-2026-11-23 17:39:31,The Murder of Roger Ackroyd,Chapter 12 Round the Table,notoriety,留
-2026-11-23 17:39:51,The Murder of Roger Ackroyd,Chapter 12 Round the Table,loath,留
-2026-11-23 17:57:43,The Murder of Roger Ackroyd,Chapter 12 Round the Table,precipitate,留
-2026-11-23 18:02:00,The Murder of Roger Ackroyd,Chapter 12 Round the Table,disloyal,留
-2026-11-23 18:02:20,The Murder of Roger Ackroyd,Chapter 12 Round the Table,through thick and thin,留
-2026-11-23 18:03:52,The Murder of Roger Ackroyd,Chapter 12 Round the Table,contradiction,留
-2026-11-23 18:04:46,The Murder of Roger Ackroyd,Chapter 12 Round the Table,concealing,留
-2026-11-23 20:34:17,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,reluctance,留
-2026-11-23 20:34:28,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,hospitably,留
-2026-11-23 20:36:11,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,hazarded,留
-2026-11-23 20:36:19,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,evasively,留
-2026-11-23 20:36:28,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,fishy,留
-2026-11-23 20:41:46,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,stirred,留
-2026-11-23 20:42:47,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,rendezvous,留
-2026-11-23 20:48:54,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,stole,留
-2026-11-23 20:50:05,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,inclined,留
-2026-11-23 20:51:24,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,chronicled,留
-2026-11-24 08:17:57,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,piecemeal,留
-2026-11-24 08:18:05,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,elucidation,留
-2026-11-24 08:18:29,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,renown,留
-2026-11-24 08:19:38,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,prostrated,留
-2026-11-24 08:20:36,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,tonic,留
-2026-11-24 08:35:20,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,startled,留
-2026-11-24 08:38:17,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,lingered,留
-2026-11-24 08:45:52,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,tactics,留
-2026-11-24 08:49:57,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,refrained,留
-2026-11-24 08:50:00,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,stifling,留
-2026-11-24 08:55:17,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,pricking,留
-2026-11-24 08:55:27,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,plead,留
+Inspector Raglan stared at the little man.",查,main
+2026-11-23 13:32:32,The Murder of Roger Ackroyd,Chapter 12 Round the Table,endeavoured,留,main
+2026-11-23 13:32:40,The Murder of Roger Ackroyd,Chapter 12 Round the Table,patronising,留,main
+2026-11-23 13:32:48,The Murder of Roger Ackroyd,Chapter 12 Round the Table,twinkling,留,main
+2026-11-23 13:40:50,The Murder of Roger Ackroyd,Chapter 12 Round the Table,reunion,留,main
+2026-11-23 13:42:09,The Murder of Roger Ackroyd,Chapter 12 Round the Table,persuade,留,main
+2026-11-23 17:35:23,The Murder of Roger Ackroyd,Chapter 12 Round the Table,whereabouts,留,main
+2026-11-23 17:36:43,The Murder of Roger Ackroyd,Chapter 12 Round the Table,entrap,留,main
+2026-11-23 17:37:32,The Murder of Roger Ackroyd,Chapter 12 Round the Table,hardened,留,main
+2026-11-23 17:39:31,The Murder of Roger Ackroyd,Chapter 12 Round the Table,notoriety,留,main
+2026-11-23 17:39:51,The Murder of Roger Ackroyd,Chapter 12 Round the Table,loath,留,main
+2026-11-23 17:57:43,The Murder of Roger Ackroyd,Chapter 12 Round the Table,precipitate,留,main
+2026-11-23 18:02:00,The Murder of Roger Ackroyd,Chapter 12 Round the Table,disloyal,留,main
+2026-11-23 18:02:20,The Murder of Roger Ackroyd,Chapter 12 Round the Table,through thick and thin,留,main
+2026-11-23 18:03:52,The Murder of Roger Ackroyd,Chapter 12 Round the Table,contradiction,留,main
+2026-11-23 18:04:46,The Murder of Roger Ackroyd,Chapter 12 Round the Table,concealing,留,main
+2026-11-23 20:34:17,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,reluctance,留,main
+2026-11-23 20:34:28,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,hospitably,留,main
+2026-11-23 20:36:11,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,hazarded,留,main
+2026-11-23 20:36:19,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,evasively,留,main
+2026-11-23 20:36:28,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,fishy,留,main
+2026-11-23 20:41:46,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,stirred,留,main
+2026-11-23 20:42:47,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,rendezvous,留,main
+2026-11-23 20:48:54,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,stole,留,main
+2026-11-23 20:50:05,The Murder of Roger Ackroyd,Chapter 13 The Goose Quill,inclined,留,main
+2026-11-23 20:51:24,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,chronicled,留,main
+2026-11-24 08:17:57,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,piecemeal,留,main
+2026-11-24 08:18:05,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,elucidation,留,main
+2026-11-24 08:18:29,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,renown,留,main
+2026-11-24 08:19:38,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,prostrated,留,main
+2026-11-24 08:20:36,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,tonic,留,main
+2026-11-24 08:35:20,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,startled,留,main
+2026-11-24 08:38:17,The Murder of Roger Ackroyd,Chapter 14 Mrs Ackroyd,lingered,留,main
+2026-11-24 08:45:52,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,tactics,留,main
+2026-11-24 08:49:57,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,refrained,留,main
+2026-11-24 08:50:00,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,stifling,留,main
+2026-11-24 08:55:17,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,pricking,留,main
+2026-11-24 08:55:27,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,plead,留,main
 2026-11-24 08:56:49,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,"He got up again and stood smiling at us.
 ‘You are a very wise young man,’ said Poirot, nodding at him with approval. ‘See you, when I know that anyone is hiding things from me, I suspect that the thing hidden may be something very bad indeed. You have done well.’
 ‘I’m glad I’m cleared from suspicion,’ laughed Raymond. ‘I’ll be off now.’
 ‘So that is that,’ I remarked, as the door closed behind the young secretary.
-‘Yes,’ agreed Poirot. ‘A mere bagatelle—but if he had not been in the billiard room—who knows? After all, many crimes have been committed for the sake of less than five hundred pounds.",查
-2026-11-24 12:12:36,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,scoundrel,留
-2026-11-24 13:43:23,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,widens,留
+‘Yes,’ agreed Poirot. ‘A mere bagatelle—but if he had not been in the billiard room—who knows? After all, many crimes have been committed for the sake of less than five hundred pounds.",查,main
+2026-11-24 12:12:36,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,scoundrel,留,main
+2026-11-24 13:43:23,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,widens,留,main
 2026-11-24 13:43:55,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,"I acquiesced, and we set out at once. Poirot asked to see Miss Ackroyd, and presently Flora came to us.
 ‘Mademoiselle Flora,’ said Poirot, ‘I have to confide in you a little secret. I am not yet satisfied of the innocence of Parker. I propose to make a little experiment with your assistance. I want to reconstruct some of his actions on that night. But we must think of something to tell him—ah! I have it. I wish to satisfy myself as to whether voices in the little lobby could have been heard outside on the terrace. Now, ring for Parker, if you will be so good.’
-I did so, and presently the butler appeared, suave as ever.",查
-2026-11-24 16:32:15,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,acquiesced,留
-2026-11-24 19:58:55,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,confide,留
-2026-11-24 20:32:05,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,dignified,留
-2026-11-24 20:32:12,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,frowning,留
-2026-11-24 20:32:33,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,tray,留
-2026-11-24 20:32:39,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,wrinkled,留
-2026-11-24 20:32:49,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,patted,留
-2026-11-25 08:12:11,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,partake,留
-2026-11-25 08:14:44,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,irritated,留
-2026-11-25 08:15:07,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,criticisms,留
-2026-11-25 08:15:16,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,acrimonious,留
-2026-11-25 08:15:48,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,disentangle,留
-2026-11-25 08:16:16,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,deuce,留
-2026-11-25 08:16:43,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,tabulated,留
-2026-11-25 08:17:11,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,tiles,留
-2026-11-25 08:18:17,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,idiosyncrasies,留
-2026-11-25 08:22:08,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,nasty,留
-2026-11-25 08:26:39,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,league,留
-2026-11-25 08:27:51,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,impertinent,留
-2026-11-25 08:30:03,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,shrewd,留
-2026-11-25 08:31:49,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,dislodges,留
-2026-11-25 08:33:20,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,ruffled,留
-2026-11-25 08:34:46,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,strained,留
-2026-11-25 08:50:34,The Murder of Roger Ackroyd,Chapter 17 Parker,exhilaration,留
-2026-11-25 08:50:52,The Murder of Roger Ackroyd,Chapter 17 Parker,indiscreet,查
-2026-11-26 08:15:40,The Murder of Roger Ackroyd,Chapter 17 Parker,wildfire,留
-2026-11-26 08:16:06,The Murder of Roger Ackroyd,Chapter 17 Parker,funeral,留
-2026-11-26 08:16:18,The Murder of Roger Ackroyd,Chapter 17 Parker,melancholy,留
-2026-11-26 08:16:22,The Murder of Roger Ackroyd,Chapter 17 Parker,ceremony,留
-2026-11-26 08:18:14,The Murder of Roger Ackroyd,Chapter 17 Parker,tinged,留
-2026-11-26 08:18:48,The Murder of Roger Ackroyd,Chapter 17 Parker,pray,查
-2026-11-26 08:19:43,The Murder of Roger Ackroyd,Chapter 17 Parker,apologetic,留
-2026-11-26 08:20:13,The Murder of Roger Ackroyd,Chapter 17 Parker,farce,留
-2026-11-26 08:20:39,The Murder of Roger Ackroyd,Chapter 17 Parker,Insulted,留
-2026-11-26 08:24:03,The Murder of Roger Ackroyd,Chapter 17 Parker,pickings,留
-2026-11-26 08:24:59,The Murder of Roger Ackroyd,Chapter 17 Parker,creep,留
-2026-11-26 08:25:20,The Murder of Roger Ackroyd,Chapter 17 Parker,tray,留
-2026-11-26 08:25:30,The Murder of Roger Ackroyd,Chapter 17 Parker,sincerity,留
-2026-11-26 08:25:48,The Murder of Roger Ackroyd,Chapter 17 Parker,rake up,留
-2026-11-26 08:32:37,The Murder of Roger Ackroyd,Chapter 17 Parker,gleam,留
-2026-11-26 08:36:05,The Murder of Roger Ackroyd,Chapter 17 Parker,derange,留
-2026-11-26 08:43:06,The Murder of Roger Ackroyd,Chapter 17 Parker,"‘Eight years older. And I’ve always considered it my duty to look after you. With a bad bringing up, Heaven knows what mischief you might have got into by now.’",留
+I did so, and presently the butler appeared, suave as ever.",查,main
+2026-11-24 16:32:15,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,acquiesced,留,main
+2026-11-24 19:58:55,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,confide,留,main
+2026-11-24 20:32:05,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,dignified,留,main
+2026-11-24 20:32:12,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,frowning,留,main
+2026-11-24 20:32:33,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,tray,留,main
+2026-11-24 20:32:39,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,wrinkled,留,main
+2026-11-24 20:32:49,The Murder of Roger Ackroyd,Chapter 15 Geoffrey Raymond,patted,留,main
+2026-11-25 08:12:11,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,partake,留,main
+2026-11-25 08:14:44,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,irritated,留,main
+2026-11-25 08:15:07,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,criticisms,留,main
+2026-11-25 08:15:16,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,acrimonious,留,main
+2026-11-25 08:15:48,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,disentangle,留,main
+2026-11-25 08:16:16,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,deuce,留,main
+2026-11-25 08:16:43,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,tabulated,留,main
+2026-11-25 08:17:11,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,tiles,留,main
+2026-11-25 08:18:17,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,idiosyncrasies,留,main
+2026-11-25 08:22:08,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,nasty,留,main
+2026-11-25 08:26:39,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,league,留,main
+2026-11-25 08:27:51,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,impertinent,留,main
+2026-11-25 08:30:03,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,shrewd,留,main
+2026-11-25 08:31:49,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,dislodges,留,main
+2026-11-25 08:33:20,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,ruffled,留,main
+2026-11-25 08:34:46,The Murder of Roger Ackroyd,Chapter 16 An Evening at Mah Jong,strained,留,main
+2026-11-25 08:50:34,The Murder of Roger Ackroyd,Chapter 17 Parker,exhilaration,留,main
+2026-11-25 08:50:52,The Murder of Roger Ackroyd,Chapter 17 Parker,indiscreet,查,main
+2026-11-26 08:15:40,The Murder of Roger Ackroyd,Chapter 17 Parker,wildfire,留,main
+2026-11-26 08:16:06,The Murder of Roger Ackroyd,Chapter 17 Parker,funeral,留,main
+2026-11-26 08:16:18,The Murder of Roger Ackroyd,Chapter 17 Parker,melancholy,留,main
+2026-11-26 08:16:22,The Murder of Roger Ackroyd,Chapter 17 Parker,ceremony,留,main
+2026-11-26 08:18:14,The Murder of Roger Ackroyd,Chapter 17 Parker,tinged,留,main
+2026-11-26 08:18:48,The Murder of Roger Ackroyd,Chapter 17 Parker,pray,查,main
+2026-11-26 08:19:43,The Murder of Roger Ackroyd,Chapter 17 Parker,apologetic,留,main
+2026-11-26 08:20:13,The Murder of Roger Ackroyd,Chapter 17 Parker,farce,留,main
+2026-11-26 08:20:39,The Murder of Roger Ackroyd,Chapter 17 Parker,Insulted,留,main
+2026-11-26 08:24:03,The Murder of Roger Ackroyd,Chapter 17 Parker,pickings,留,main
+2026-11-26 08:24:59,The Murder of Roger Ackroyd,Chapter 17 Parker,creep,留,main
+2026-11-26 08:25:20,The Murder of Roger Ackroyd,Chapter 17 Parker,tray,留,main
+2026-11-26 08:25:30,The Murder of Roger Ackroyd,Chapter 17 Parker,sincerity,留,main
+2026-11-26 08:25:48,The Murder of Roger Ackroyd,Chapter 17 Parker,rake up,留,main
+2026-11-26 08:32:37,The Murder of Roger Ackroyd,Chapter 17 Parker,gleam,留,main
+2026-11-26 08:36:05,The Murder of Roger Ackroyd,Chapter 17 Parker,derange,留,main
+2026-11-26 08:43:06,The Murder of Roger Ackroyd,Chapter 17 Parker,"‘Eight years older. And I’ve always considered it my duty to look after you. With a bad bringing up, Heaven knows what mischief you might have got into by now.’",留,main
 2026-11-26 08:45:53,The Murder of Roger Ackroyd,Chapter 17 Parker,"It was totally unlike his usual manner.
-‘Let us take a man—a very ordinary man. A man with no idea of murder in his heart. There is in him somewhere a strain of weakness—deep down. It has so far never been called into play. Perhaps it never will be—and if so he will go to his grave honoured and respected by everyone. But let us suppose that something occurs. He is in difficulties—or perhaps not that even. He may stumble by accident on a secret—a secret involving life or death to someone. And his first impulse will be to speak out—to do his duty as an honest citizen. And then the strain of weakness tells. Here is a chance of money—a great amount of money.",查
-2026-11-26 12:59:35,The Murder of Roger Ackroyd,Chapter 17 Parker,"And so there came your proverb, the death of the goose that laid the golden eggs.",留
-2026-11-27 08:25:10,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,jubilantly,留
-2026-11-27 08:25:25,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,dope,留
-2026-11-27 08:25:53,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,muddle,留
-2026-11-27 08:26:11,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,feasible,留
-2026-11-27 08:27:13,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,detained,留
-2026-11-27 08:27:33,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,wary,留
-2026-11-27 08:28:28,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,monotony,留
-2026-11-27 08:30:35,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,juncture,留
-2026-11-27 08:33:52,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,croaked,留
-2026-11-27 08:35:43,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,grinned,留
-2026-11-27 08:38:36,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,sage,留
+‘Let us take a man—a very ordinary man. A man with no idea of murder in his heart. There is in him somewhere a strain of weakness—deep down. It has so far never been called into play. Perhaps it never will be—and if so he will go to his grave honoured and respected by everyone. But let us suppose that something occurs. He is in difficulties—or perhaps not that even. He may stumble by accident on a secret—a secret involving life or death to someone. And his first impulse will be to speak out—to do his duty as an honest citizen. And then the strain of weakness tells. Here is a chance of money—a great amount of money.",查,main
+2026-11-26 12:59:35,The Murder of Roger Ackroyd,Chapter 17 Parker,"And so there came your proverb, the death of the goose that laid the golden eggs.",留,main
+2026-11-27 08:25:10,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,jubilantly,留,main
+2026-11-27 08:25:25,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,dope,留,main
+2026-11-27 08:25:53,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,muddle,留,main
+2026-11-27 08:26:11,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,feasible,留,main
+2026-11-27 08:27:13,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,detained,留,main
+2026-11-27 08:27:33,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,wary,留,main
+2026-11-27 08:28:28,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,monotony,留,main
+2026-11-27 08:30:35,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,juncture,留,main
+2026-11-27 08:33:52,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,croaked,留,main
+2026-11-27 08:35:43,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,grinned,留,main
+2026-11-27 08:38:36,The Murder of Roger Ackroyd,Chapter 18 Charles Kent,sage,留,main
 2026-11-27 08:40:37,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,"Chapter 19
 Flora Ackroyd
 [插图]
 As I was returning from my round the following morning, I was hailed by Inspector Raglan. I pulled up, and the inspector mounted on the step.
 ‘Good morning, Dr Sheppard,’ he said. ‘Well, that alibi is all right enough.’
 ‘Charles Kent’s?’
-‘Charles Kent’s. The barmaid at the Dog and Whistle, Sally Jones, she remembers him perfectly.",查
-2026-11-27 08:41:02,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,hailed,留
-2026-11-27 08:42:13,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,Obstinate,留
-2026-11-27 08:42:46,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,I felt a distinct pleasure in passing on my own discomfiture.,留
+‘Charles Kent’s. The barmaid at the Dog and Whistle, Sally Jones, she remembers him perfectly.",查,main
+2026-11-27 08:41:02,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,hailed,留,main
+2026-11-27 08:42:13,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,Obstinate,留,main
+2026-11-27 08:42:46,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,I felt a distinct pleasure in passing on my own discomfiture.,留,main
 2026-11-27 08:51:58,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,"I acquiesced willingly.
 On inquiry for Miss Ackroyd, we were shown into the billiard room. Flora and Major Hector Blunt were sitting on the long window seat.
 ‘Good morning, Miss Ackroyd,’ said the inspector. ‘Can we have a word or two alone with you?’
 Blunt got up at once and moved to the door.
 ‘What is it?’ asked Flora nervously. ‘Don’t go, Major Blunt. He can stay, can’t he?’ she asked, turning to the inspector.
-‘That’s as you like,’ said the inspector drily. ‘There’s a question or two it’s my duty to put to you, miss, but I’d prefer to do so privately, and I dare say you’d prefer it also.’",查
+‘That’s as you like,’ said the inspector drily. ‘There’s a question or two it’s my duty to put to you, miss, but I’d prefer to do so privately, and I dare say you’d prefer it also.’",查,main
+2026-11-28 10:45:44,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,stamped,留,main
+2026-11-28 10:51:55,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,insupportable,留,main
+2026-11-28 10:54:16,The Murder of Roger Ackroyd,Chapter 19 Flora Ackroyd,anguish,留,main
+2026-11-28 11:24:35,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,jolt,留,main
+2026-11-28 11:31:46,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,interior,留,main
+2026-11-28 11:36:13,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,intrigue,留,main
+2026-11-28 11:42:18,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,inward,留,main
+2026-11-28 11:42:25,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,agitation,留,main
+2026-11-28 11:52:36,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,slipped,留,main
+2026-11-28 12:00:56,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,detour,留,main
+2026-11-28 12:03:19,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,resemblance,留,main
+2026-11-28 12:05:04,The Murder of Roger Ackroyd,Chapter 20 Miss Russell,succession,留,main
+2026-11-24 23:11:38,Esio Trot,Esio Trot,balcony,留,bedtime
+2026-11-24 23:11:58,Esio Trot,Esio Trot,balcony,查,bedtime
+2026-11-24 23:12:00,Esio Trot,Esio Trot,riot,留,bedtime
+2026-11-24 23:13:15,Esio Trot,Esio Trot,jutted,留,bedtime
+2026-11-24 23:15:42,Esio Trot,Esio Trot,tremendous,留,bedtime
+2026-11-24 23:16:52,Esio Trot,Esio Trot,endearments,留,bedtime
+2026-11-24 23:16:55,Esio Trot,Esio Trot,stroking,留,bedtime
+2026-11-24 23:18:04,Esio Trot,Esio Trot,hay,留,bedtime
+2026-11-24 23:18:19,Esio Trot,Esio Trot,hibernating,留,bedtime
+2026-11-25 08:10:24,Esio Trot,Esio Trot,"Now we come to a certain bright morning in May when something happened that changed and indeed electrified Mr Hoppy’s life. He was leaning over his balcony rail watching Mrs Silver serving Alfie his breakfast.
+“Here’s the heart of the lettuce for you, my lovely,” she was saying. “And here’s a slice of fresh tomato and a piece of crispy celery.”
+“Good morning, Mrs Silver,” Mr Hoppy said. “Alfie’s looking well this morning.”
+“Isn’t he gorgeous!” Mrs Silver said, looking up and beaming at him.",查,bedtime
+2026-11-25 23:33:58,Esio Trot,Esio Trot,electrified,留,bedtime
+2026-11-25 23:34:15,Esio Trot,Esio Trot,leaning,留,bedtime
+2026-11-25 23:35:00,Esio Trot,Esio Trot,gorgeous,留,bedtime
+2026-11-25 23:35:39,Esio Trot,Esio Trot,gazing,留,bedtime
+2026-11-25 23:37:33,Esio Trot,Esio Trot,scales,留,bedtime
+2026-11-25 23:38:12,Esio Trot,Esio Trot,solemnly,留,bedtime
+2026-11-25 23:38:37,Esio Trot,Esio Trot,titchy,留,bedtime
+2026-11-25 23:38:41,Esio Trot,Esio Trot,miserable,留,bedtime
+2026-11-25 23:44:52,Esio Trot,Esio Trot,cabbage,留,bedtime
+2026-11-25 23:49:27,Esio Trot,Esio Trot,"From his vast collection, it was not difficult for Mr Hoppy to find just the tortoise he wanted. He wanted one that weighed fifteen ounces exactly on his kitchen scales, no more and no less. When he had got it, he put it on the kitchen table beside Alfie, and even he could hardly tell that one was bigger than the other. But it was bigger. It was bigger by two ounces. This was Tortoise Number 2.
+Mr Hoppy took Tortoise Number 2 out onto the balcony and gripped it in the claws of his tortoise-catcher. Then he lowered it onto Mrs Silver’s balcony, right beside a nice fresh lettuce leaf.",查,bedtime
+2026-11-22 22:03:02,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,queer,留,bedtime
+2026-11-22 22:04:00,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,peer,留,bedtime
+2026-11-22 22:04:17,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,faded,留,bedtime
+2026-11-22 22:05:26,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,scraped,留,bedtime
+2026-11-22 22:06:33,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,glorious,留,bedtime
+2026-11-22 22:07:18,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,gazing,留,bedtime
+2026-11-22 22:07:23,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,enormous,留,bedtime
+2026-11-22 22:07:54,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,sailing out,留,bedtime
+2026-11-22 22:08:21,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,porcelain,留,bedtime
+2026-11-22 22:08:23,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,lavatory,留,bedtime
+2026-11-22 22:08:47,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,splintering,留,bedtime
+2026-11-22 22:10:34,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,But you can bet your life nothing was going to stop me from hurrying back there again tomorrow morning to see what the next surprise was going to be.,留,bedtime
+2026-11-22 22:11:10,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,ridiculous,留,bedtime
+2026-11-22 22:11:18,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,tremendous,留,bedtime
+2026-11-22 22:14:37,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,baffled,留,bedtime
+2026-11-22 22:15:35,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,jiggly,留,bedtime
+2026-11-22 22:15:40,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,skinny,留,bedtime
+2026-11-22 22:15:55,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,furry,留,bedtime
+2026-11-22 22:17:15,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,enthralled,留,bedtime
+2026-11-22 22:18:18,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,spread,留,bedtime
+2026-11-22 22:18:56,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,shut,留,bedtime
+2026-11-22 22:19:09,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,beak,留,bedtime
+2026-11-22 22:19:29,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,Hop,留,bedtime
+2026-11-22 22:23:05,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,tweak,留,bedtime
+2026-11-22 22:23:46,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,swoosh,留,bedtime
+2026-11-22 22:27:49,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,salmon,留,bedtime
+2026-11-22 22:30:25,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,filthy,留,bedtime
+2026-11-22 22:32:50,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,palace,留,bedtime
+2026-11-22 22:36:18,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,staggered,留,bedtime
+2026-11-22 22:36:25,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,reeled,留,bedtime
+2026-11-22 22:38:24,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,muttered,留,bedtime
+2026-11-22 22:46:32,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,drawers,留,bedtime
+2026-11-22 22:46:36,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,pistol,留,bedtime
+2026-11-22 22:46:52,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,Gad,留,bedtime
+2026-11-22 22:47:09,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,Summon,留,bedtime
+2026-11-22 22:48:24,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,tremendous,留,bedtime
+2026-11-22 22:51:37,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,Shake,留,bedtime
+2026-11-22 22:51:57,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,blur,留,bedtime
+2026-11-22 22:53:09,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,pinched,留,bedtime
+2026-11-22 22:53:20,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,bowled,留,bedtime
+2026-11-22 22:54:49,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,villain,留,bedtime
+2026-11-22 22:54:57,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,collar,留,bedtime
+2026-11-22 22:55:13,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,pounced,留,bedtime
+2026-11-22 22:55:32,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,wrists,留,bedtime
+2026-11-22 22:56:06,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,climb up,留,bedtime
+2026-11-22 22:56:50,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,lawn,留,bedtime
+2026-11-23 21:52:21,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,rotten,留,bedtime
+2026-11-23 21:55:53,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,patting,留,bedtime
+2026-11-23 21:58:09,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,famished,留,bedtime
+2026-11-23 22:00:43,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,shores,留,bedtime
+2026-11-23 22:11:10,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,guzzling,留,bedtime
+2026-11-23 22:17:48,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,marvellous,留,bedtime
+2026-11-23 22:19:14,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,cascade,留,bedtime
+2026-11-23 22:21:36,The Giraffe and the Pelly and Me,The Giraffe and the Pelly and Me,melancholy,留,bedtime
+2026-11-21 22:25:31,The Magic Finger,About the Authors,illustrator,留,bedtime
+2026-11-21 22:30:23,The Magic Finger,The Magic Finger,whiskers,留,bedtime
+2026-11-21 22:31:08,The Magic Finger,The Magic Finger,bushy,留,bedtime
+2026-11-21 22:31:50,The Magic Finger,The Magic Finger,get cross,留,bedtime
+2026-11-21 22:32:08,The Magic Finger,The Magic Finger,tingle,留,bedtime
+2026-11-21 22:33:55,The Magic Finger,The Magic Finger,flew,留,bedtime
+2026-11-21 22:35:47,The Magic Finger,The Magic Finger,still,留,bedtime
+2026-11-21 22:37:25,The Magic Finger,The Magic Finger,yell,留,bedtime
+2026-11-21 22:39:08,The Magic Finger,The Magic Finger,flown,留,bedtime
+2026-11-21 22:40:50,The Magic Finger,The Magic Finger,beaks,留,bedtime
+2026-11-21 22:41:00,The Magic Finger,The Magic Finger,quacked,留,bedtime
+2026-11-21 22:43:31,The Magic Finger,The Magic Finger,feathers,留,bedtime
+2026-11-21 22:45:37,The Magic Finger,The Magic Finger,beastly,留,bedtime
+2026-11-21 22:45:41,The Magic Finger,The Magic Finger,stove,留,bedtime
+2026-11-21 22:46:33,The Magic Finger,The Magic Finger,mince,留,bedtime
+2026-11-21 22:48:59,The Magic Finger,The Magic Finger,peeped,留,bedtime
+2026-11-21 22:49:09,The Magic Finger,The Magic Finger,enormous,留,bedtime
+2026-11-21 22:52:15,The Magic Finger,The Magic Finger,congratulate,留,bedtime
+2026-11-21 22:52:27,The Magic Finger,The Magic Finger,hopped,留,bedtime
+2026-11-21 22:54:20,The Magic Finger,The Magic Finger,queer,留,bedtime
+2026-11-21 22:54:27,The Magic Finger,The Magic Finger,smashing,留,bedtime
+2026-11-21 22:54:43,The Magic Finger,The Magic Finger,soil,留,bedtime
+2026-11-21 22:54:51,The Magic Finger,The Magic Finger,mounds,留,bedtime
+2026-11-21 22:55:00,The Magic Finger,The Magic Finger,graves,留,bedtime
+2026-11-21 22:55:13,The Magic Finger,The Magic Finger,sack,留,bedtime
+2026-11-21 22:55:32,The Magic Finger,The Magic Finger,barley,留,bedtime
+2026-11-21 22:55:36,The Magic Finger,The Magic Finger,scattering,留,bedtime
+2026-11-21 22:56:05,The Magic Finger,The Magic Finger,dotty,留,bedtime
+2026-11-21 22:56:42,The Magic Finger,The Magic Finger,tub,留,bedtime
+2026-11-21 22:56:45,The Magic Finger,The Magic Finger,brim,留,bedtime
+2026-11-21 22:56:53,The Magic Finger,The Magic Finger,feathers,留,bedtime

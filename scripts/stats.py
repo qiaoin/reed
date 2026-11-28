@@ -200,11 +200,10 @@ def _day_stats(entries: list[Entry]) -> dict[date, dict[str, int]]:
 
 
 def behavioral_flags(entries: list[Entry]) -> dict[date, list[str]]:
-    """只用行为数据抓「今天大概卡住了」，不依赖自报。
+    """标记相对近期阅读速度的变化，仅作观察，不推断心理状态。
 
-    规则一：当天查词数超过阶段配额（P0 基线周不设配额，跳过）。
-    规则二：当天 wpm 低于此前 28 天中位数的 65%，且读满 20 分钟。
-    这比「自报完美主义」可靠：完美主义恰恰是当事人自己注意不到的那件事。
+    单日速度可能受文本难度、疲劳、阅读方式或记录误差影响。
+    查词数和阶段参考值单独展示，不在这里触发行为判定。
     """
     stats = _day_stats(entries)
     days = sorted(stats)
@@ -214,9 +213,6 @@ def behavioral_flags(entries: list[Entry]) -> dict[date, list[str]]:
         if row["minutes"] < 20:
             continue
         reasons: list[str] = []
-        cap = phase_for(day).cap
-        if cap < 100 and row["lookups"] > cap:
-            reasons.append(f"查词 {row['lookups']} 个，超配额 {cap}")
         pool = [
             stats[d]["words"] / stats[d]["minutes"]
             for d in days
@@ -278,7 +274,6 @@ def report(entries: list[Entry], since: date, until: date) -> str:
     perfect_days = {e.day for e in window if e.perfectionism}
     flag_map = {d: r for d, r in behavioral_flags(entries).items() if since <= d <= until}
     flag_days = set(flag_map)
-    signal_days = perfect_days | flag_days
     phase = phase_for(until)
     wpm_text = f"{wpm:.0f} wpm" if minutes else "—"
     all_wpm_text = f"{all_wpm:.0f} wpm" if all_minutes else "—"
@@ -295,11 +290,12 @@ def report(entries: list[Entry], since: date, until: date) -> str:
         f"| 有效时长 | {fmt_int(minutes)} min | {fmt_int(all_minutes)} min |",
         f"| 速度 | {wpm_text} | {all_wpm_text} |",
         f"| 查词 / 未查 | {lookups} / {marks} | {all_lookups} / {sum(e.marks for e in entries)} |",
-        f"| 中断率 | {density:.1f} /千词 | {all_density:.1f} /千词 |",
-        f"| 生词率 | {unknown_density:.1f} /千词 | {all_unknown_density:.1f} /千词 |",
-        f"| 超配额天数 | {len(over)} | — |",
+        f"| 查词密度 | {density:.1f} /千词 | {all_density:.1f} /千词 |",
+        f"| 标记密度（查词+未查） | {unknown_density:.1f} /千词 | {all_unknown_density:.1f} /千词 |",
+        f"| 查词高于参考天数 | {len(over)} | — |",
         f"| 沉浸度均值 | {imm_text} | {all_imm_text} |",
-        f"| 完美主义 | 自报 {len(perfect_days)} 天 · 行为疑似 {len(flag_days)} 天 | — |",
+        f"| 完美主义（自报） | {len(perfect_days)} 天 | {len({e.day for e in entries if e.perfectionism})} 天 |",
+        f"| 速度变化提示 | {len(flag_days)} 天 | — |",
         f"| 连续天数 | {streak(all_days, until)} | — |",
         "",
     ]
@@ -307,59 +303,38 @@ def report(entries: list[Entry], since: date, until: date) -> str:
     elapsed_phase = (until - phase.start).days + 1
     phase_days = (phase.end - phase.start).days + 1
     phase_words = sum(e.words for e in entries if phase.start <= e.day <= phase.end)
-    phase_pct = phase_words / phase.plan * 100 if phase.plan else 0.0
     lines += [
-        f"**阶段** {phase.code} {phase.name} · 第 {max(1, min(elapsed_phase, phase_days))}/{phase_days} 天 · "
-        f"{fmt_int(phase_words)} / {fmt_int(phase.plan)} 词（{phase_pct:.0f}%）",
-        f"**总进度** {fmt_int(all_words)} / {fmt_int(TARGET_WORDS)} 词（{all_words / TARGET_WORDS * 100:.1f}%）",
+        f"**阶段观察** {phase.code} {phase.name} · 第 {max(1, min(elapsed_phase, phase_days))}/{phase_days} 天 · "
+        f"本阶段记录 {fmt_int(phase_words)} 词；当前阶段书单合计 {fmt_int(phase.plan)} 词（参考）",
+        f"**累计记录** {fmt_int(all_words)} 词；当前 P1–P4 书单合计 {fmt_int(TARGET_WORDS)} 词（参考，不是配额）",
     ]
-
-    span = max(1, (until - PROJECT_START).days + 1)
-    rate = all_words / span
-    if rate > 0 and all_words < TARGET_WORDS and span >= 14:
-        eta = until + timedelta(days=round((TARGET_WORDS - all_words) / rate))
-        lines.append(f"**预测** 按当前均速（{fmt_int(rate)} 词/天），约 {eta.strftime('%Y-%m')} 读完 {TARGET_WORDS / 1e6:.2f}M 词")
-    elif all_words < TARGET_WORDS:
-        lines.append("**预测** 数据不足 14 天，暂不外推。")
 
     verdicts: list[str] = []
     if lookups == 0 and marks:
         verdicts.append(
-            f"零中断：{marks} 个生词只标未查，生词率 {unknown_density:.1f}/千词"
-            f"（覆盖率 {100 - unknown_density / 10:.1f}%）。"
+            f"本期有 {marks} 个未查标记；标记密度只代表被标记的词，不能估算全文覆盖率。"
         )
-    elif over:
+    if over:
         verdicts.append(
-            f"{len(over)} 天超配额（上限 {phase.cap} 个/天）：明天零查词日，只标记不查。"
+            f"有 {len(over)} 天查词量高于阶段参考上限；只记录趋势，不自动要求调整。"
         )
     elif words and density > phase.density:
         verdicts.append(
-            f"密度 {density:.1f} 超过阶段目标 {phase.density:.1f}：下次把配额压到 {phase.cap - 2} 个，"
-            "超出的只标记不查。"
+            f"查词密度 {density:.1f}/千词，高于阶段参考 {phase.density:.1f}；单看数量不判定阅读状态。"
         )
     elif lookups and density < phase.density * 0.6 and phase.density < 50:
         verdicts.append(
-            f"密度 {density:.1f} 远低于目标 {phase.density:.1f}：可能在忍，也可能在漂。"
-            "抽一页自测：能不能说出谁干了什么？"
+            f"查词密度 {density:.1f}/千词，低于阶段参考 {phase.density:.1f}；单看数量不判定理解或忍耐。"
         )
-    if wpm and wpm < 90:
-        verdicts.append(f"速度 {wpm:.0f} wpm：先别追速度，查一下回读次数是不是偏高。")
     if flag_days:
         detail = "；".join(
             f"{d.strftime('%m-%d')} {flag_map[d][0]}" for d in sorted(flag_days)[-2:]
         )
-        verdicts.append(f"行为标记 {len(flag_days)} 天（{detail}）：不是意志问题，是那几天的文本超出 i+1。")
-    if len(signal_days) >= 3:
-        if over:
-            verdicts.append(
-                f"本期 {len(signal_days)} 天有卡住信号：配额只是症状。明天加一条——想查时先数 10 秒。"
-            )
-        else:
-            verdicts.append(f"本期 {len(signal_days)} 天有卡住信号：触发黄牌，明天零查词日。")
+        verdicts.append(f"速度变化提示 {len(flag_days)} 天（{detail}）：原因需要结合文本和当天状态判断。")
     if streak(all_days, until) >= 7:
         verdicts.append(f"连续 {streak(all_days, until)} 天：这是本周唯一值得夸的数。")
     if not verdicts:
-        verdicts.append("数据正常。不调整，继续读。")
+        verdicts.append("本期没有额外观察提示。")
 
     lines += ["", "**教练判读**", ""] + [f"- {v}" for v in verdicts[:3]]
     if bed_all:

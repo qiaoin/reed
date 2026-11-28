@@ -1,7 +1,7 @@
 # 未查生词（绿色）
 
 > 由 `weread_sync.py` 自动生成。查到就改成黄色，下次同步会从这里消失。
-> 当前 254 个。
+> 当前 266 个。
 
 ## The Murder of Roger Ackroyd · Chapter 10 The Parlourmaid
 
@@ -170,6 +170,21 @@
 - hailed
 - Obstinate
 - I felt a distinct pleasure in passing on my own discomfiture.
+- stamped
+- insupportable
+- anguish
+
+## The Murder of Roger Ackroyd · Chapter 20 Miss Russell
+
+- jolt
+- interior
+- intrigue
+- inward
+- agitation
+- slipped
+- detour
+- resemblance
+- succession
 
 ## The Murder of Roger Ackroyd · Chapter 5 Murder
 

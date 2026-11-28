@@ -1,6 +1,6 @@
 # 微信读书书单 · 英文原著候选池
 
-> 快照：2026-11-27 · 来源：本机微信读书库
+> 快照：2026-11-28 · 来源：本机微信读书库
 > 扫描范围：**40 个自建书单（472 本）** + 书架 1,232 本（其中英文原著 23 本）。
 > 用途：**备选池**，不是新书单。BOARD 的 WIP 仍然是 1 本；这里只回答「下一本可以换什么」。
 
@@ -28,7 +28,7 @@ Five Little Pigs 630L · Appointment with Death 680L · Murder on the Links 730L
 ## 三条使用规则
 
 1. **只有排进 BOARD 队列的书才写进 [books.csv](books.csv)**（带词数 / Lexile，会进统计）；候选池不参与统计，也不占 WIP。
-2. **终考候选现在不读**：*The Moving Finger* 已在 [MILESTONES.md](MILESTONES.md) 的终考池里；*The ABC Murders* 看过中文节目，不能做终考。
+2. **P4 陌生故事候选**：*The Moving Finger* 可作为 P4 自愿选择之一；*The ABC Murders* 看过中文节目，若想读也可以读，只是它不适合用来观察陌生剧情阅读感受。
 3. **换书保持功能位**：短篇锚点 / 群像 / 象征 / 长跑 / 潜台词，一次只换一本。
 
 ## 候选池
@@ -48,13 +48,13 @@ Five Little Pigs 630L · Appointment with Death 680L · Murder on the Links 730L
 | Cards on the Table | 牌中牌 | Agatha Christie | 680L | 60k | 未读 | 无 | 四侦探四嫌疑人；已在计划 |
 | Endless Night | 无尽长夜 | Agatha Christie | 700L | 70k | 未读 | 无 | 哥特；非系列；已在计划 |
 | Crooked House | 畸形屋 | Agatha Christie | 700L | 70k | 未读 | 无 | 家族密室；已在计划 |
-| The Murder of Roger Ackroyd | 罗杰疑案 | Agatha Christie | 700L | 75k | 英文在读 75.2% | 有 | 进行中；不可靠叙述 |
+| The Murder of Roger Ackroyd | 罗杰疑案 | Agatha Christie | 700L | 75k | 英文在读 81.3% | 有 | 进行中；不可靠叙述 |
 | The Body in the Library | 藏书室女尸 | Agatha Christie | 710L | 50k | 未读 | 无 | 马普尔；短 |
 | Sleeping Murder | 沉睡的谋杀 | Agatha Christie | 720L | 65k | 未读 | 无 | 马普尔；记忆不可靠 |
 | The Murder on the Links | 高尔夫球场命案 | Agatha Christie | 730L | 60k | 中文读完 | 无 | 波洛早期；黑斯廷斯视角 |
-| The Moving Finger | 魔手 | Agatha Christie | 740L | 55k | 未读 | 无 | 终考候选，现在别碰 |
+| The Moving Finger | 魔手 | Agatha Christie | 740L | 55k | 未读 | 无 | P4 陌生故事候选之一；可按兴趣选择 |
 | A Murder Is Announced | 谋杀启事 | Agatha Christie | 740L | 70k | 未读 | 无 | 马普尔；群像 |
-| The ABC Murders | ABC 谋杀案 | Agatha Christie | 740L | 70k | 看过中文节目 | 无 | 不能做终考 |
+| The ABC Murders | ABC 谋杀案 | Agatha Christie | 740L | 70k | 看过中文节目 | 无 | 已看过中文节目；不适合做陌生剧情体验 |
 | Curtain | 帷幕 | Agatha Christie | 750L | 60k | 中文在读 34% | 无 | 波洛最后一案 |
 | The Mysterious Affair at Styles | 斯泰尔斯庄园奇案 | Agatha Christie | 770L | 55k | 中文在读 11% | 有 | 波洛首案；英文版已上架 |
 
@@ -91,7 +91,7 @@ Five Little Pigs 630L · Appointment with Death 680L · Murder on the Links 730L
 | The Blind Assassin | 盲刺客 | Margaret Atwood | — | 140k | 未读 | 无 | 套层叙事；P4 候选 |
 | Hyperion | 海伯利安 | Dan Simmons | — | 150k | 中文读完 | 无 | 框架叙事；六个故事 |
 
-### P4 · 收束与终考（12 本）
+### P4 · 收束与自由阅读（12 本）
 
 | 书名 | 中文 | 作者 | Lexile | 词数 | 状态 | 英文版 | 备注 |
 |---|---|---|---:|---:|---|---|---|

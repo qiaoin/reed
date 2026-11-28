@@ -15,7 +15,7 @@ P3,3,The Two Towers,J. R. R. Tolkien,155000,860L,4.5,queued,看过影视,双线�
 P3,4,The Long Goodbye,Raymond Chandler,105000,,4.5,queued,可能看过影视,硬汉派俚语与省略；最像听力,,main
 P4,1,Harry Potter and the Goblet of Fire,J. K. Rowling,190000,880L,3.5,queued,未读,十九万词耐力；P4 开场,,main
 P4,2,The Return of the King,J. R. R. Tolkien,130000,860L,4.5,queued,看过影视,三部曲收束,,main
-P4,3,Final Exam (TBD),自选,80000,,4,queued,必须未读,终考：陌生推理小说,,main
+P4,3,Optional Choice (TBD),自选,80000,,4,queued,优先选陌生故事,自选阅读；可按兴趣做简短回顾,,main
 EXT,1,Steve Jobs,Walter Isaacson,570000,1080L,4,queued,未读,2029 加时第一本（方案 A）,,main
 EXT,2,The Remains of the Day,Kazuo Ishiguro,140000,1350L,5,queued,看过中文,已读中文版，移出主线归入后续书单,,main
 EXT,3,And Then There Were None,Agatha Christie,60000,570L,2,queued,看过中文+英剧,已读中文版，移出主线归入后续书单,,main
@@ -41,5 +41,5 @@ B,2,To Kill a Mockingbird,Harper Lee,100000,870L,3.5,backup,未读,备选：儿�
 B,3,The Old Man and the Sea,Ernest Hemingway,27000,940L,3.5,backup,未读,备选：象征入门,,main
 B,4,Holes,Louis Sachar,47000,660L,2,backup,未读,备选：短句锚点,,main
 B,5,Evil Under the Sun,Agatha Christie,60000,600L,2.5,backup,已囤,备选：海岛封闭空间,,main
-B,6,The ABC Murders,Agatha Christie,70000,740L,3,backup,看过中文节目,备选：不能做终考,,main
+B,6,The ABC Murders,Agatha Christie,70000,740L,3,backup,看过中文节目,备选：不作为陌生剧情观察样本,,main
 B,7,The Witches,Roald Dahl,36000,740L,3,missing,看过影视,暂无 EPUB；找到后插在 BFG 之后补读,,
