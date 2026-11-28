@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BOOKS_CSV = ROOT / "books.csv"
 LOG_CSV = ROOT / "log" / "reading-log.csv"
 MARKS_CSV = ROOT / "log" / "weread-marks.csv"
-PROJECT_START = date(2026, 11, 23)
+PROJECT_START = date(2026, 11, 20)
 
 
 def _phase_plans() -> dict[str, int]:
@@ -49,7 +49,7 @@ def _phase_plans() -> dict[str, int]:
 
 
 PLANS = _phase_plans()
-TARGET_WORDS = sum(PLANS.values()) or 1_603_500
+TARGET_WORDS = sum(PLANS.values()) or 1_601_000
 
 
 @dataclass(frozen=True)
@@ -57,15 +57,15 @@ class Phase:
     code: str
     start: date
     end: date
-    cap: int  # 每日查词上限
-    density: float  # 每千词查词上限
+    lookup_ref: int  # 每日查词参考
+    density_ref: float  # 每千词查词参考
     plan: int  # 阶段计划词数
     name: str
 
 
 PHASES = (
-    Phase("P0", date(2026, 11, 23), date(2026, 11, 30), 999, 99.0, 8_000, "基线周"),
-    Phase("P1", date(2026, 12, 1), date(2027, 5, 31), 6, 4.0, PLANS.get("P1", 277_500), "去敏期"),
+    Phase("P0", date(2026, 11, 20), date(2026, 11, 30), 999, 99.0, 8_000, "基线期"),
+    Phase("P1", date(2026, 12, 1), date(2027, 5, 31), 6, 4.0, PLANS.get("P1", 275_000), "去敏期"),
     Phase("P2", date(2027, 6, 1), date(2027, 11, 30), 5, 2.5, PLANS.get("P2", 402_000), "建图期"),
     Phase("P3", date(2027, 12, 1), date(2028, 5, 31), 4, 1.5, PLANS.get("P3", 524_000), "风格期"),
     Phase("P4", date(2028, 6, 1), date(2028, 11, 30), 2, 1.0, PLANS.get("P4", 400_000), "沉浸期"),
@@ -270,7 +270,7 @@ def report(entries: list[Entry], since: date, until: date) -> str:
     per_day: dict[date, int] = {}
     for e in window:
         per_day[e.day] = per_day.get(e.day, 0) + e.lookups
-    over = [d for d, n in per_day.items() if n > phase_for(d).cap]
+    over = [d for d, n in per_day.items() if n > phase_for(d).lookup_ref]
     perfect_days = {e.day for e in window if e.perfectionism}
     flag_map = {d: r for d, r in behavioral_flags(entries).items() if since <= d <= until}
     flag_days = set(flag_map)
@@ -292,7 +292,7 @@ def report(entries: list[Entry], since: date, until: date) -> str:
         f"| 查词 / 未查 | {lookups} / {marks} | {all_lookups} / {sum(e.marks for e in entries)} |",
         f"| 查词密度 | {density:.1f} /千词 | {all_density:.1f} /千词 |",
         f"| 标记密度（查词+未查） | {unknown_density:.1f} /千词 | {all_unknown_density:.1f} /千词 |",
-        f"| 查词高于参考天数 | {len(over)} | — |",
+        f"| 查词高于参考值天数 | {len(over)} | — |",
         f"| 沉浸度均值 | {imm_text} | {all_imm_text} |",
         f"| 完美主义（自报） | {len(perfect_days)} 天 | {len({e.day for e in entries if e.perfectionism})} 天 |",
         f"| 速度变化提示 | {len(flag_days)} 天 | — |",
@@ -303,9 +303,14 @@ def report(entries: list[Entry], since: date, until: date) -> str:
     elapsed_phase = (until - phase.start).days + 1
     phase_days = (phase.end - phase.start).days + 1
     phase_words = sum(e.words for e in entries if phase.start <= e.day <= phase.end)
+    plan_note = (
+        "基线期，不作词数规划"
+        if phase.code == "P0"
+        else f"当前阶段书单合计 {fmt_int(phase.plan)} 词（参考）"
+    )
     lines += [
         f"**阶段观察** {phase.code} {phase.name} · 第 {max(1, min(elapsed_phase, phase_days))}/{phase_days} 天 · "
-        f"本阶段记录 {fmt_int(phase_words)} 词；当前阶段书单合计 {fmt_int(phase.plan)} 词（参考）",
+        f"本阶段记录 {fmt_int(phase_words)} 词；{plan_note}",
         f"**累计记录** {fmt_int(all_words)} 词；当前 P1–P4 书单合计 {fmt_int(TARGET_WORDS)} 词（参考，不是配额）",
     ]
 
@@ -316,15 +321,11 @@ def report(entries: list[Entry], since: date, until: date) -> str:
         )
     if over:
         verdicts.append(
-            f"有 {len(over)} 天查词量高于阶段参考上限；只记录趋势，不自动要求调整。"
+            f"有 {len(over)} 天查词量高于阶段参考值；只记录趋势，不自动要求调整。"
         )
-    elif words and density > phase.density:
+    elif words and density > phase.density_ref:
         verdicts.append(
-            f"查词密度 {density:.1f}/千词，高于阶段参考 {phase.density:.1f}；单看数量不判定阅读状态。"
-        )
-    elif lookups and density < phase.density * 0.6 and phase.density < 50:
-        verdicts.append(
-            f"查词密度 {density:.1f}/千词，低于阶段参考 {phase.density:.1f}；单看数量不判定理解或忍耐。"
+            f"查词密度 {density:.1f}/千词，高于阶段参考 {phase.density_ref:.1f}；单看数量不判定阅读状态。"
         )
     if flag_days:
         detail = "；".join(
@@ -332,7 +333,7 @@ def report(entries: list[Entry], since: date, until: date) -> str:
         )
         verdicts.append(f"速度变化提示 {len(flag_days)} 天（{detail}）：原因需要结合文本和当天状态判断。")
     if streak(all_days, until) >= 7:
-        verdicts.append(f"连续 {streak(all_days, until)} 天：这是本周唯一值得夸的数。")
+        verdicts.append(f"连续 {streak(all_days, until)} 天有记录；连续性只作观察。")
     if not verdicts:
         verdicts.append("本期没有额外观察提示。")
 
@@ -389,7 +390,7 @@ def _candidate_stems(word: str) -> list[str]:
     return [c for c in dict.fromkeys(cands) if len(c) >= 3]
 
 
-def review_report(min_count: int = 2) -> str:
+def review_report(min_count: int = 2, slot: str = "main") -> str:
     """书末 10 分钟复现清算：从 weread-marks.csv 筛出累计复现 >= min_count 次的词。"""
     if not MARKS_CSV.exists():
         return "## 复现生词清算\n\n还没有 `log/weread-marks.csv`，先跑一次 `python3 scripts/weread_sync.py`。\n"
@@ -397,6 +398,9 @@ def review_report(min_count: int = 2) -> str:
     records: list[dict] = []
     with MARKS_CSV.open(encoding="utf-8-sig", newline="") as fh:
         for row in csv.DictReader(fh):
+            row_slot = (row.get("slot") or "main").strip() or "main"
+            if slot != "all" and row_slot != slot:
+                continue
             raw = (row.get("text") or "").strip()
             cleaned = re.sub(r"^[^a-zA-Z]+|[^a-zA-Z]+$", "", raw).lower()
             cleaned = re.sub(r"\s+", " ", cleaned)
@@ -459,7 +463,7 @@ def review_report(min_count: int = 2) -> str:
             n_mk = len(items) - n_lk
             st = " ".join(p for p in (f"查{n_lk}" if n_lk else "", f"留{n_mk}" if n_mk else "") if p)
             locs = list(dict.fromkeys(
-                f"{it['book'].split()[0]}:{it['chapter'].split()[0] if it['chapter'] else '?'}"
+                f"{it['book'][:24]}:{it['chapter'][:12] or '?'}"
                 if len({x['book'] for x in items}) > 1
                 else (it["chapter"][:22] or it["book"][:22])
                 for it in items
@@ -468,8 +472,9 @@ def review_report(min_count: int = 2) -> str:
         out.append("")
         return out
 
+    slot_label = "全部" if slot == "all" else ("主线" if slot == "main" else slot)
     lines = [
-        f"## 书末复现词清算（阈值 ≥ {min_count} 次）",
+        f"## 书末复现词清算（{slot_label}，阈值 ≥ {min_count} 次）",
         "",
         f"扫描 {len(records)} 条标记（归并后 {len(groups)} 个词条）："
         f"**捞出 {len(green_only) + len(looked_again)} 个复现词**，自动放生 {discarded} 个单次偶遇词。",
@@ -492,10 +497,11 @@ def main() -> None:
     group.add_argument("--all", action="store_true", help="统计全部记录")
     group.add_argument("--review", action="store_true", help="书末 10 分钟复现词清算")
     parser.add_argument("--min-count", type=int, default=2, help="--review 最小复现次数（默认 2）")
+    parser.add_argument("--slot", default="main", help="--review 的轨道：main（默认）/ bedtime / all")
     args = parser.parse_args()
 
     if args.review:
-        print(review_report(args.min_count))
+        print(review_report(args.min_count, args.slot))
         return
 
     books = load_books()

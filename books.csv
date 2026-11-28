@@ -8,7 +8,7 @@ P2,2,Harry Potter and the Chamber of Secrets,J. K. Rowling,85000,940L,3,queued,�
 P2,3,"The Lion, the Witch and the Wardrobe",C. S. Lewis,38000,940L,2.5,queued,未读,短篇奇幻；换口气,,main
 P2,4,Prince Caspian,C. S. Lewis,45000,870L,3,queued,未读,中世纪叙事；句法变旧,,main
 P2,5,The Voyage of the Dawn Treader,C. S. Lewis,50000,970L,3,queued,未读,单元式结构；每章一个岛,,main
-P2,6,Harry Potter and the Prisoner of Azkaban,J. K. Rowling,107000,880L,3,queued,未读,十万词长跑；P2 期末考,,main
+P2,6,Harry Potter and the Prisoner of Azkaban,J. K. Rowling,107000,880L,3,queued,未读,十万词长跑；P2 阶段末长跑,,main
 P3,1,Runaway,Alice Munro,84000,,4,queued,未读中文,短篇集；8 篇独立；时间跳跃与留白；P3 开篇换挡,,main
 P3,2,The Fellowship of the Ring,J. R. R. Tolkien,180000,860L,4.5,queued,看过影视,史诗开篇；诗歌可整段跳,,main
 P3,3,The Two Towers,J. R. R. Tolkien,155000,860L,4.5,queued,看过影视,双线叙事；长句耐力,,main
@@ -34,7 +34,7 @@ BED,10,Matilda,Roald Dahl,40000,840L,3,queued,看过影视,诚品 16 册：Goodr
 BED,11,Charlie and the Chocolate Factory,Roald Dahl,47000,810L,3,queued,看过影视,诚品 16 册：Goodreads #2,,bedtime
 BED,12,James and the Giant Peach,Roald Dahl,40000,870L,3,queued,看过影视,诚品 16 册：Goodreads #5,,bedtime
 BED,13,Danny the Champion of the World,Roald Dahl,30000,770L,3,queued,未读,诚品 16 册：非奇幻，父子,,bedtime
-DAY,1,Boy: Tales of Childhood,Roald Dahl,35000,1020L,4,queued,未读,自传；读完 6 本 Dahl 后白天读,,main
+DAY,1,Boy: Tales of Childhood,Roald Dahl,35000,1020L,4,queued,未读,自传；读完 10 本 Dahl 后白天读,,main
 DAY,2,Going Solo,Roald Dahl,50000,1020L,4,queued,未读,自传；Boy 之后读,,main
 B,1,The Great Gatsby,F. Scott Fitzgerald,47000,1070L,4,backup,看过中文,备选：象征与不可靠叙述,,main
 B,2,To Kill a Mockingbird,Harper Lee,100000,870L,3.5,backup,未读,备选：儿童视角与法庭,,main

@@ -164,6 +164,12 @@ def parse_thought(text: str) -> tuple[str, str, str]:
     return immersion, perfectionism, s
 
 
+def is_word_mark(text: str, max_tokens: int = 4, max_chars: int = 50) -> bool:
+    """判断一条划线是否像「查一个词/短语」，而不是整段选中。"""
+    cleaned = " ".join((text or "").split())
+    return bool(cleaned) and len(cleaned.split()) <= max_tokens and len(cleaned) <= max_chars
+
+
 def read_reviews(conn: sqlite3.Connection, book_id: str, my_vid: int | None) -> list[dict]:
     """读取当前用户在 WRReview 里写的想法（含仅自己可见的私密想法）。"""
     has_table = conn.execute(
@@ -373,6 +379,9 @@ def main() -> None:
             if slot != "main":
                 # 睡前轨只进复现词底表（weread-marks.csv），不计入主线密度与未查清单
                 continue
+            if not is_word_mark(mark["text"]):
+                # 整句/整段选中是笔记，不是查词；只进底表，不计入密度与未查清单
+                continue
             repeated[mark["text"].casefold()] += 1
             total_marks += 1
             if mark["color"] != DEFERRED_COLOR:
@@ -383,8 +392,14 @@ def main() -> None:
             day_marks = by_day[day]
             words = words_by_day[day]
             cum = cum_by_day[day]
-            deferred = sum(1 for m in day_marks if m["color"] == DEFERRED_COLOR)
-            lookups = len(day_marks) - deferred
+            deferred = sum(
+                1 for m in day_marks
+                if m["color"] == DEFERRED_COLOR and is_word_mark(m["text"])
+            )
+            lookups = sum(
+                1 for m in day_marks
+                if m["color"] != DEFERRED_COLOR and is_word_mark(m["text"])
+            )
             if day < since:
                 prev_cum = cum
                 continue
@@ -446,6 +461,21 @@ def main() -> None:
 
     merged = kept + new_rows
     merged_keys = {(row["date"], row["book"]) for row in merged}
+
+    # 汇总以实际写入的 reading-log 行为准：手动行保留原数，不用自动生成值覆盖
+    book_words = {row["title"]: int(float(row["words"] or 0)) for row in books}
+    window_main = [
+        row for row in merged
+        if (row.get("slot") or "main") == "main"
+        and date.fromisoformat(row["date"]) >= since
+    ]
+    total_words = sum(
+        (float(row["to_pct"]) - float(row["from_pct"])) / 100 * book_words.get(row["book"], 0)
+        for row in window_main
+    )
+    total_lookups = sum(int(row.get("lookups") or 0) for row in window_main)
+    total_marks = sum(int(row.get("lookups") or 0) + int(row.get("marks") or 0) for row in window_main)
+
     synced_thoughts = 0
     for row in merged:
         th = thoughts_by_key.get((row["date"], row["book"]))
@@ -464,7 +494,7 @@ def main() -> None:
     ]
 
     print(f"## 微信读书同步 · {new_rows[0]['date']} → {new_rows[-1]['date']}\n")
-    print("| 日期 | 书名 | 槽 | 词数 | 查词 | 未查 | 中断率 | 分钟 | wpm | 时段数 |")
+    print("| 日期 | 书名 | 槽 | 词数 | 查词 | 未查 | 查词密度 | 分钟 | wpm | 时段数 |")
     print("|---|---|---|---:|---:|---:|---:|---:|---:|---:|")
     for row in new_rows:
         words = (float(row["to_pct"]) - float(row["from_pct"])) / 100 * next(
@@ -478,10 +508,9 @@ def main() -> None:
 
     if total_words:
         unknown_total = total_marks
-        print(f"\n**合计** {total_words:,.0f} 词 · 查词 {total_lookups} 次 · 未查 {unknown_total - total_lookups} 个")
-        print(f"**中断率** {total_lookups / total_words * 1000:.1f} /千词（每 "
-              f"{total_words / max(total_lookups, 1):.0f} 词停一次）· "
-              f"**生词率** {unknown_total / total_words * 1000:.1f} /千词")
+        print(f"\n**主线合计** {total_words:,.0f} 词 · 查词 {total_lookups} 次 · 未查 {unknown_total - total_lookups} 个")
+        print(f"**查词密度** {total_lookups / total_words * 1000:.1f} /千词 · "
+              f"**标记密度** {unknown_total / total_words * 1000:.1f} /千词")
     if repeated:
         top = [(w, n) for w, n in repeated.most_common(6) if n > 1]
         if top:
@@ -518,6 +547,7 @@ def main() -> None:
         "# 未查生词（绿色）",
         "",
         "> 由 `weread_sync.py` 自动生成。查到就改成黄色，下次同步会从这里消失。",
+        "> 只列词/短语；整句或整段标记不计入。",
         f"> 当前 {open_total} 个。",
         "",
     ]

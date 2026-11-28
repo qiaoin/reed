@@ -154,7 +154,7 @@ Lexile 会低估他：书里有大量自造词（snozzcumber、whizzpopper）、
 
 | 顺序 | 书 | 词数 | Lexile | 什么时候读 |
 |---|---|---:|---:|---|
-| 1 | Boy: Tales of Childhood | 35k | 1020L | 完成 6 本 Dahl 后的白天 |
+| 1 | Boy: Tales of Childhood | 35k | 1020L | 完成 10 本 Dahl 后的白天 |
 | 2 | Going Solo | 50k | 1020L | Boy 之后 |
 
 **为什么不放睡前**：1020L，且是回忆录——没有童话的节奏，睡前读会累。但读完一整套 Dahl 之后再读他的童年，会非常有味道：你会认出书里那些老师、糖果店和挪威奶奶的原型。

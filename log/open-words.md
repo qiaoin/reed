@@ -1,7 +1,8 @@
 # 未查生词（绿色）
 
 > 由 `weread_sync.py` 自动生成。查到就改成黄色，下次同步会从这里消失。
-> 当前 266 个。
+> 只列词/短语；整句或整段标记不计入。
+> 当前 261 个。
 
 ## The Murder of Roger Ackroyd · Chapter 10 The Parlourmaid
 
@@ -148,8 +149,6 @@
 - rake up
 - gleam
 - derange
-- ‘Eight years older. And I’ve always considered it my duty to look after you. With a bad bringing up, Heaven knows what mischief you might have got into by now.’
-- And so there came your proverb, the death of the goose that laid the golden eggs.
 
 ## The Murder of Roger Ackroyd · Chapter 18 Charles Kent
 
@@ -169,7 +168,6 @@
 
 - hailed
 - Obstinate
-- I felt a distinct pleasure in passing on my own discomfiture.
 - stamped
 - insupportable
 - anguish
@@ -290,7 +288,6 @@
 - bending
 - heretical
 - fuss
-- The Mill on the Floss
 - exquisitely
 - yachting
 - assorted
@@ -298,7 +295,6 @@
 - squeeze
 - relief
 - tribute
-- just a leetle peculiar about money
 - jerkily
 - alacrity
 - taciturnity

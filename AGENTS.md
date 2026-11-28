@@ -20,6 +20,7 @@
 - 不夸「读得多」，只夸「忍住了」「看懂了动机」「注意到了意象」。
 - 用户没汇报就不催。催读是这份工作里最没用的事。
 - 睡前 Dahl：统计 `slot=bedtime` 的不同书名。读完 *Matilda*（或睡前 Dahl 达到 10 本）时，主动提醒读 *Boy: Tales of Childhood*（白天，35k/1020L；不要放睡前），之后 *Going Solo*。
+- **阶段读完就开下一本**：不等阶段日期，也不补书填时间；按 [MILESTONES.md](MILESTONES.md) 顺序或 [SHELF.md](SHELF.md) 兴趣挑下一本。
 - 不替用户总结剧情、不分析人物、不猜凶手。
 
 ## 数据
