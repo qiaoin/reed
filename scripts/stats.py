@@ -26,8 +26,28 @@ ROOT = Path(__file__).resolve().parent.parent
 BOOKS_CSV = ROOT / "books.csv"
 LOG_CSV = ROOT / "log" / "reading-log.csv"
 MARKS_CSV = ROOT / "log" / "weread-marks.csv"
-TARGET_WORDS = 1_603_000
 PROJECT_START = date(2026, 11, 23)
+
+
+def _phase_plans() -> dict[str, int]:
+    """从 books.csv 现算 P1–P4 的计划词数，避免改书单后目标数字漂移。"""
+    plans: dict[str, int] = {}
+    if not BOOKS_CSV.exists():
+        return plans
+    with BOOKS_CSV.open(encoding="utf-8-sig", newline="") as fh:
+        for row in csv.DictReader(fh):
+            code = (row.get("phase") or "").strip().upper()
+            if code not in ("P1", "P2", "P3", "P4"):
+                continue
+            try:
+                plans[code] = plans.get(code, 0) + int(float((row.get("words") or "0").strip() or 0))
+            except ValueError:
+                continue
+    return plans
+
+
+PLANS = _phase_plans()
+TARGET_WORDS = sum(PLANS.values()) or 1_603_500
 
 
 @dataclass(frozen=True)
@@ -43,10 +63,10 @@ class Phase:
 
 PHASES = (
     Phase("P0", date(2026, 11, 23), date(2026, 11, 30), 999, 99.0, 8_000, "基线周"),
-    Phase("P1", date(2026, 12, 1), date(2027, 5, 31), 6, 4.0, 277_000, "去敏期"),
-    Phase("P2", date(2027, 6, 1), date(2027, 11, 30), 5, 2.5, 402_000, "建图期"),
-    Phase("P3", date(2027, 12, 1), date(2028, 5, 31), 4, 1.5, 524_000, "风格期"),
-    Phase("P4", date(2028, 6, 1), date(2028, 11, 30), 2, 1.0, 400_000, "沉浸期"),
+    Phase("P1", date(2026, 12, 1), date(2027, 5, 31), 6, 4.0, PLANS.get("P1", 277_500), "去敏期"),
+    Phase("P2", date(2027, 6, 1), date(2027, 11, 30), 5, 2.5, PLANS.get("P2", 402_000), "建图期"),
+    Phase("P3", date(2027, 12, 1), date(2028, 5, 31), 4, 1.5, PLANS.get("P3", 524_000), "风格期"),
+    Phase("P4", date(2028, 6, 1), date(2028, 11, 30), 2, 1.0, PLANS.get("P4", 400_000), "沉浸期"),
 )
 
 
@@ -248,7 +268,7 @@ def report(entries: list[Entry], since: date, until: date) -> str:
     rate = all_words / span
     if rate > 0 and all_words < TARGET_WORDS and span >= 14:
         eta = until + timedelta(days=round((TARGET_WORDS - all_words) / rate))
-        lines.append(f"**预测** 按当前均速（{fmt_int(rate)} 词/天），约 {eta.strftime('%Y-%m')} 读完 1.87M 词")
+        lines.append(f"**预测** 按当前均速（{fmt_int(rate)} 词/天），约 {eta.strftime('%Y-%m')} 读完 {TARGET_WORDS / 1e6:.2f}M 词")
     elif all_words < TARGET_WORDS:
         lines.append("**预测** 数据不足 14 天，暂不外推。")
 

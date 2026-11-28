@@ -43,4 +43,5 @@ python3 scripts/stats.py --review     # 书末 10 分钟复现词清算
 
 - 改书单 / 换书 → 同步 `books.csv` 和 `MILESTONES.md`，保持「功能位」不重复。
 - 改阶段日期或配额 → 同时改 `MILESTONES.md` 和 `scripts/stats.py` 里的 `PHASES`，否则统计会和计划打架。
+- 计划词数不用手改：`stats.py` 从 `books.csv` 的 P1–P4 现算 `TARGET_WORDS` 与各阶段 plan。改书单只改 `books.csv` 和 `MILESTONES.md`。
 - 不要为了让数据好看而改判词；趋势比单日数字重要。
