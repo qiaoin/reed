@@ -185,6 +185,51 @@ def fmt_int(value: float) -> str:
     return f"{int(round(value)):,}"
 
 
+def _day_stats(entries: list[Entry]) -> dict[date, dict[str, int]]:
+    """按天汇总主线记录（同一天可能有多行）。"""
+    out: dict[date, dict[str, int]] = {}
+    for e in entries:
+        row = out.setdefault(e.day, {"words": 0, "minutes": 0, "lookups": 0, "marks": 0})
+        row["words"] += e.words
+        row["minutes"] += e.minutes
+        row["lookups"] += e.lookups
+        row["marks"] += e.marks
+    return out
+
+
+def behavioral_flags(entries: list[Entry]) -> dict[date, list[str]]:
+    """只用行为数据抓「今天大概卡住了」，不依赖自报。
+
+    规则一：当天查词数超过阶段配额（P0 基线周不设配额，跳过）。
+    规则二：当天 wpm 低于此前 28 天中位数的 65%，且读满 20 分钟。
+    这比「自报完美主义」可靠：完美主义恰恰是当事人自己注意不到的那件事。
+    """
+    stats = _day_stats(entries)
+    days = sorted(stats)
+    flags: dict[date, list[str]] = {}
+    for day in days:
+        row = stats[day]
+        if row["minutes"] < 20:
+            continue
+        reasons: list[str] = []
+        cap = phase_for(day).cap
+        if cap < 100 and row["lookups"] > cap:
+            reasons.append(f"查词 {row['lookups']} 个，超配额 {cap}")
+        pool = [
+            stats[d]["words"] / stats[d]["minutes"]
+            for d in days
+            if d < day and stats[d]["minutes"] >= 20 and (day - d).days <= 28
+        ]
+        if len(pool) >= 3:
+            base = sorted(pool)[len(pool) // 2]
+            wpm = row["words"] / row["minutes"]
+            if base >= 40 and wpm < base * 0.65:
+                reasons.append(f"速度 {wpm:.0f} wpm，只有基线 {base:.0f} 的 {wpm / base * 100:.0f}%")
+        if reasons:
+            flags[day] = reasons
+    return flags
+
+
 def report(entries: list[Entry], since: date, until: date) -> str:
     window = [e for e in entries if since <= e.day <= until]
     bed_all = [e for e in entries if e.slot != "main"]
@@ -229,6 +274,9 @@ def report(entries: list[Entry], since: date, until: date) -> str:
         per_day[e.day] = per_day.get(e.day, 0) + e.lookups
     over = [d for d, n in per_day.items() if n > phase_for(d).cap]
     perfect_days = {e.day for e in window if e.perfectionism}
+    flag_map = {d: r for d, r in behavioral_flags(entries).items() if since <= d <= until}
+    flag_days = set(flag_map)
+    signal_days = perfect_days | flag_days
     phase = phase_for(until)
     wpm_text = f"{wpm:.0f} wpm" if minutes else "—"
     all_wpm_text = f"{all_wpm:.0f} wpm" if all_minutes else "—"
@@ -249,7 +297,7 @@ def report(entries: list[Entry], since: date, until: date) -> str:
         f"| 生词率 | {unknown_density:.1f} /千词 | {all_unknown_density:.1f} /千词 |",
         f"| 超配额天数 | {len(over)} | — |",
         f"| 沉浸度均值 | {imm_text} | {all_imm_text} |",
-        f"| 完美主义发作 | {len(perfect_days)} 天 | — |",
+        f"| 完美主义 | 自报 {len(perfect_days)} 天 · 行为疑似 {len(flag_days)} 天 | — |",
         f"| 连续天数 | {streak(all_days, until)} | — |",
         "",
     ]
@@ -294,13 +342,18 @@ def report(entries: list[Entry], since: date, until: date) -> str:
         )
     if wpm and wpm < 90:
         verdicts.append(f"速度 {wpm:.0f} wpm：先别追速度，查一下回读次数是不是偏高。")
-    if len(perfect_days) >= 3:
+    if flag_days:
+        detail = "；".join(
+            f"{d.strftime('%m-%d')} {flag_map[d][0]}" for d in sorted(flag_days)[-2:]
+        )
+        verdicts.append(f"行为标记 {len(flag_days)} 天（{detail}）：不是意志问题，是那几天的文本超出 i+1。")
+    if len(signal_days) >= 3:
         if over:
             verdicts.append(
-                f"本期 {len(perfect_days)} 天完美主义发作：配额只是症状。明天加一条——想查时先数 10 秒。"
+                f"本期 {len(signal_days)} 天有卡住信号：配额只是症状。明天加一条——想查时先数 10 秒。"
             )
         else:
-            verdicts.append(f"本期 {len(perfect_days)} 天完美主义发作：触发黄牌，明天零查词日。")
+            verdicts.append(f"本期 {len(signal_days)} 天有卡住信号：触发黄牌，明天零查词日。")
     if streak(all_days, until) >= 7:
         verdicts.append(f"连续 {streak(all_days, until)} 天：这是本周唯一值得夸的数。")
     if not verdicts:
