@@ -1,7 +1,7 @@
 # 未查生词（绿色）
 
 > 由 `weread_sync.py` 自动生成。查到就改成黄色，下次同步会从这里消失。
-> 当前 240 个。
+> 当前 254 个。
 
 ## The Murder of Roger Ackroyd · Chapter 10 The Parlourmaid
 
@@ -150,6 +150,26 @@
 - derange
 - ‘Eight years older. And I’ve always considered it my duty to look after you. With a bad bringing up, Heaven knows what mischief you might have got into by now.’
 - And so there came your proverb, the death of the goose that laid the golden eggs.
+
+## The Murder of Roger Ackroyd · Chapter 18 Charles Kent
+
+- jubilantly
+- dope
+- muddle
+- feasible
+- detained
+- wary
+- monotony
+- juncture
+- croaked
+- grinned
+- sage
+
+## The Murder of Roger Ackroyd · Chapter 19 Flora Ackroyd
+
+- hailed
+- Obstinate
+- I felt a distinct pleasure in passing on my own discomfiture.
 
 ## The Murder of Roger Ackroyd · Chapter 5 Murder
 

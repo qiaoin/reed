@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""从微信读书 Mac 本地库同步划线（= 查词）数据，写入 reading-log.csv。
+"""从微信读书 Mac 本地库同步划线（= 查词）与私密想法数据，写入 reading-log.csv。
 
 原理：微信读书 Mac 版把划线存在
   ~/Library/Containers/com.tencent.weread/Data/Documents/WeReadDB_*.db
-表 WRBookmark 里每一条就是你划的词，带章节、字符位置、时间戳。
-脚本做快照（不碰运行中的库），按「章节字数 + 划线密度」还原每天读了多少词。
+表 WRBookmark 里每一条就是你划的词，表 WRReview 里存你在书里写的想法（支持私密想法）。
+脚本做快照（不碰运行中的库），按「章节字数 + 划线密度」还原每天读了多少词，
+并自动把当天想法（如 `4 | 画面描述`）解析写入 immersion 与 highlight。
 
 用法:
     python3 scripts/weread_sync.py              # 最近 30 天
@@ -18,6 +19,7 @@ from __future__ import annotations
 import argparse
 import csv
 import difflib
+import re
 import shutil
 import sqlite3
 import sys
@@ -132,6 +134,67 @@ def read_marks(conn: sqlite3.Connection, book_id: str) -> list[dict]:
     return [m for m in marks if m["text"]]
 
 
+def extract_vid(db_path: Path) -> int | None:
+    """从 WeReadDB_<vid>.db 文件名提取当前登录用户的 userVid。"""
+    m = re.search(r"WeReadDB_(\d+)$", db_path.stem)
+    return int(m.group(1)) if m else None
+
+
+def parse_thought(text: str) -> tuple[str, str, str]:
+    """解析微信读书想法为 (immersion, perfectionism, highlight)。
+
+    支持格式：
+      - `4 | 波洛在喷泉花园偷听` 或 `4｜...` / `4：...`
+      - `波洛在喷泉花园偷听`（无沉浸分）
+      - 末尾带 `#完美主义` 或 `完美主义发作` 时自动标 perfectionism=Y
+    """
+    s = " ".join((text or "").strip().splitlines()).strip()
+    if not s:
+        return "", "", ""
+    perfectionism = ""
+    if re.search(r"#?完美主义(?:发作)?", s):
+        perfectionism = "Y"
+        s = re.sub(r"[，,\s]*#?完美主义(?:发作)?", "", s).strip()
+    immersion = ""
+    m = re.match(r"^([1-5])\s*[|｜:：\-—]\s*(.+)$", s)
+    if m:
+        immersion, s = m.group(1), m.group(2).strip()
+    elif re.fullmatch(r"[1-5]", s):
+        immersion, s = s, ""
+    return immersion, perfectionism, s
+
+
+def read_reviews(conn: sqlite3.Connection, book_id: str, my_vid: int | None) -> list[dict]:
+    """读取当前用户在 WRReview 里写的想法（含仅自己可见的私密想法）。"""
+    has_table = conn.execute(
+        "select 1 from sqlite_master where type='table' and name='WRReview'"
+    ).fetchone()
+    if not has_table:
+        return []
+    rows = conn.execute(
+        "select chapterIdx, chapterTitle, content, coalesce(nullif(createTime, 0), sortTime, 0), isPrivate, fromId "
+        "from WRReview where (bookId=? or belongBookId=?) "
+        "and coalesce(isDraft, 0)=0 and coalesce(content, '')!='' "
+        "order by coalesce(nullif(createTime, 0), sortTime, 0)",
+        (book_id, book_id),
+    ).fetchall()
+    reviews = []
+    for chapter, chapter_title, content, stamp, is_priv, from_id in rows:
+        if my_vid is not None and from_id not in (None, 0, my_vid) and not is_priv:
+            continue
+        text = (content or "").strip()
+        if not text:
+            continue
+        reviews.append({
+            "chapter": int(chapter or 0),
+            "chapter_title": chapter_title or "",
+            "text": text,
+            "time": ts_to_dt(stamp or 0),
+            "is_private": bool(is_priv),
+        })
+    return reviews
+
+
 def read_chapters(conn: sqlite3.Connection, book_id: str) -> dict[int, dict]:
     rows = conn.execute(
         "select chapterIdx, title, wordCount from WRChapter where bookId=? order by chapterIdx",
@@ -218,10 +281,12 @@ def main() -> None:
     args = parser.parse_args()
 
     db = Path(args.db).expanduser() if args.db else find_db()
+    my_vid = extract_vid(db)
     tmp = snapshot(db)
     conn = sqlite3.connect(str(tmp / db.name))
     books = load_books()
     overrides = load_date_overrides()
+    thoughts_by_key: dict[tuple[str, str], dict[str, str]] = {}
 
     wx_books = conn.execute(
         "select bookId, title from WRBook "
@@ -252,6 +317,26 @@ def main() -> None:
         title = row["title"]
         apply_date_overrides(marks, title, overrides)
         slot = (row.get("slot") or "main").strip() or "main"
+        reviews = read_reviews(conn, str(book_id), my_vid)
+        apply_date_overrides(reviews, title, overrides)
+        rev_by_day: dict[date, list[dict]] = defaultdict(list)
+        for rev in reviews:
+            rev_by_day[rev["time"].date()].append(rev)
+        for rday, rlist in rev_by_day.items():
+            imm_val, perf_val, hl_parts = "", "", []
+            for rev in rlist:
+                im, pf, hl = parse_thought(rev["text"])
+                if im:
+                    imm_val = im
+                if pf:
+                    perf_val = pf
+                if hl:
+                    hl_parts.append(hl)
+            thoughts_by_key[(rday.isoformat(), title)] = {
+                "immersion": imm_val,
+                "perfectionism": perf_val,
+                "highlight": "；".join(dict.fromkeys(hl_parts)),
+            }
         book_words = int(float(row["words"] or 60000))
         allocated = allocate(marks, read_chapters(conn, str(book_id)), book_words)
         words_by_day = allocated["words_by_day"]
@@ -276,13 +361,6 @@ def main() -> None:
         by_day: dict[date, list[dict]] = defaultdict(list)
         for mark in marks:
             by_day[mark["time"].date()].append(mark)
-            if slot != "main":
-                # 睡前轨只记账（本数 / 时长 / 进度），不进主线生词表
-                continue
-            repeated[mark["text"].casefold()] += 1
-            total_marks += 1
-            if mark["color"] != DEFERRED_COLOR:
-                total_lookups += 1
             status = "留" if mark["color"] == DEFERRED_COLOR else "查"
             marks_out.append({
                 "datetime": mark["time"].strftime("%Y-%m-%d %H:%M:%S"),
@@ -290,7 +368,15 @@ def main() -> None:
                 "chapter": mark["chapter_title"],
                 "text": mark["text"],
                 "status": status,
+                "slot": slot,
             })
+            if slot != "main":
+                # 睡前轨只进复现词底表（weread-marks.csv），不计入主线密度与未查清单
+                continue
+            repeated[mark["text"].casefold()] += 1
+            total_marks += 1
+            if mark["color"] != DEFERRED_COLOR:
+                total_lookups += 1
             if status == "留":
                 open_by_chapter[(title, mark["chapter_title"])].append(mark["text"])
         for day in sorted(by_day):
@@ -359,6 +445,23 @@ def main() -> None:
                     row[field] = old[field]
 
     merged = kept + new_rows
+    merged_keys = {(row["date"], row["book"]) for row in merged}
+    synced_thoughts = 0
+    for row in merged:
+        th = thoughts_by_key.get((row["date"], row["book"]))
+        if not th:
+            continue
+        filled = False
+        for field in ("immersion", "perfectionism", "highlight"):
+            if not row.get(field) and th.get(field):
+                row[field] = th[field]
+                filled = True
+        if filled:
+            synced_thoughts += 1
+    unmatched_thoughts = [
+        (d, b, th) for (d, b), th in sorted(thoughts_by_key.items())
+        if (d, b) not in merged_keys and date.fromisoformat(d) >= since
+    ]
 
     print(f"## 微信读书同步 · {new_rows[0]['date']} → {new_rows[-1]['date']}\n")
     print("| 日期 | 书名 | 槽 | 词数 | 查词 | 未查 | 中断率 | 分钟 | wpm | 时段数 |")
@@ -384,6 +487,20 @@ def main() -> None:
         if top:
             print("**重复划的词**：" + "、".join(f"{w} ×{n}" for w, n in top))
 
+    if synced_thoughts:
+        print(f"**同步想法**：已从 WRReview 自动补全 {synced_thoughts} 天的主观记录（immersion / highlight）")
+    if unmatched_thoughts:
+        print("\n**抓到的独立想法（当日暂无划线记录）**：")
+        for d, b, th in unmatched_thoughts:
+            parts = []
+            if th.get("immersion"):
+                parts.append(f"沉浸 {th['immersion']}")
+            if th.get("perfectionism"):
+                parts.append("完美主义=Y")
+            if th.get("highlight"):
+                parts.append(f"高光：{th['highlight']}")
+            print(f"- {d} | {b} | {' / '.join(parts)}")
+
     if unknown:
         print("\n**books.csv 里没有这些书（未计入）**：")
         for item in unknown:
@@ -394,7 +511,7 @@ def main() -> None:
         return
 
     write_log(merged)
-    write_csv(MARKS_CSV, marks_out, ["datetime", "book", "chapter", "text", "status"])
+    write_csv(MARKS_CSV, marks_out, ["datetime", "book", "chapter", "text", "status", "slot"])
 
     open_total = sum(len(v) for v in open_by_chapter.values())
     lines = [

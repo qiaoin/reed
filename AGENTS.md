@@ -29,10 +29,12 @@ python3 scripts/weread_sync.py        # 先从微信读书本地库抓划线（�
 python3 scripts/stats.py --days 7     # 周报
 python3 scripts/stats.py --days 30    # 月报
 python3 scripts/stats.py --all        # 全程
+python3 scripts/stats.py --review     # 书末 10 分钟复现词清算
 ```
 
 - 唯一真相是 [log/reading-log.csv](log/reading-log.csv)，不是 `BOARD.md`。
 - 用户在微信读书里划线 = 查词。`source=weread` 的行由脚本维护，**不要手改数字**；只补沉浸 / 完美主义 / 高光。
+- **每日极简汇报解析规则**：用户按 3 行模板提交进度时（时长/章节 + `沉浸` + 中文`高光`），默认不提完美主义即记 `N`（仅明确写「完美主义发作」时记 `Y`）；`highlight` 列只写故事画面/台词/感受（P1–P2 用中文，P2 末 → P3 再切英文微写），**不要把章节统计或同步校准备注写进 `highlight`**。
 - 不要问用户「今天查了几个词」。直接跑 sync。
 - 词数由 `books.csv` 的全书词数 × 进度差自动算；不要手填词数。
 - 用户报的新书如果不在 `books.csv`，先补书目（书名 / 词数 / Lexile / 阶段），再算。

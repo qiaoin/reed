@@ -15,9 +15,9 @@ python3 scripts/stats.py --days 7   # 出周报
 
 | 书名 | 进度 | 读到 | 累计词数 | 累计查词 | 密度 | 阶段目标 |
 |---|---|---:|---:|---:|---:|---:|
-| The Murder of Roger Ackroyd | 70.9% | Chapter 17 | 52,523 | 200 查 / 239 留 | 3.8 /千词 | ≤ 4.0 |
+| The Murder of Roger Ackroyd | 75.2% | Chapter 19（半） | 55,801 | 202 查 / 253 留 | 3.6 /千词 | ≤ 4.0 |
 
-读完 17 章，剩 10 章 / 约 22k 词。
+读完 18 章，Ch19 约一半；剩 8 章半 / 约 19k 词。
 
 ---
 
@@ -34,6 +34,7 @@ python3 scripts/stats.py --days 7   # 出周报
 | 2026-11-24 | Roger Ackroyd | 53.5→61.7% | 6,109 | 55 | 2 / — | 21 |  |  | Ch14–15：23 条划线（查 2 / 留 21） |
 | 2026-11-25 | Roger Ackroyd | 61.7→65.4% | 2,760 | 26 | 0 / — | 16 |  |  | Ch16 16 条绿标；Ch17 开头 2 条未记 |
 | 2026-11-26 | Roger Ackroyd | 66.2→70.9% | 3,510 | 31 | 2 / — | 17 |  |  | Ch17 19 条标记；2 查 |
+| 2026-11-27 | Roger Ackroyd | 70.9→75.2% | 3,275 | 27 | 2 / — | 14 |  |  | Ch18 读完 + Ch19 约一半；自动行把 Ch19 算成整章，已按半章修正 |
 
 > 基线周不设配额（W0 只测，不管）。从 Chapter 4 起按「每章 10 个」执行，见 §D。
 
@@ -53,8 +54,8 @@ python3 scripts/stats.py --days 7   # 出周报
 
 | 📥 排队（最多 2 本） | 📖 在读（只能 1 本） | ✅ 本周读完 | 🗄 弃读（年度配额 1） |
 |---|---|---|---|
-| And Then There Were None | **The Murder of Roger Ackroyd** 70.9% | The Magic Finger、The Giraffe and the Pelly and Me | — |
-| Cards on the Table | | | |
+| Cards on the Table | **The Murder of Roger Ackroyd** 75.2% | The Magic Finger、The Giraffe and the Pelly and Me | — |
+| Endless Night | | | |
 
 > 换书池：[SHELF.md](SHELF.md) — 微信读书 40 个书单里筛出的 61 本英文原著候选（读过 / 未读、阶段、Lexile）。
 > 睡前轨（与主线并行，不算 WIP）：**已完成 3/13** — The Magic Finger（30 分钟 / 查 0）、The Giraffe and the Pelly and Me（83 分钟 / 查 0）、Esio Trot（35 分钟 / 查 3）。
@@ -83,9 +84,11 @@ python3 scripts/stats.py --days 7   # 出周报
 | Ch15 Geoffrey Raymond | 2,766 | 16 | 5.8 | ✅ |
 | Ch16 An Evening at Mah Jong | 2,762 | 16 | 5.8 | ✅ |
 | Ch17 Parker | 3,876 | 19 | 4.9 | ✅ |
-| Ch18–Ch27 | ~22,600 | 每章 ≤ 10 | — | 未开始 |
+| Ch18 Charles Kent | 1,828 | 11 | 6.0 | ✅ |
+| Ch19 Flora Ackroyd（半） | 2,893 | 5 | 1.7 | ⏳ 50% |
+| Ch20–Ch27 | ~19,200 | 每章 ≤ 10 | — | 未开始 |
 
-**本阶段目标**：中断率从 20.4 压到 10 以下，再压到 4；当前 **3.8**，已低于目标 4.0。生词率另算，不设上限。
+**本阶段目标**：中断率从 20.4 压到 10 以下，再压到 4；当前 **3.6**，低于目标 4.0。生词率另算，不设上限。
 
 ### 本周实验（Ch4 开始）
 
@@ -141,7 +144,7 @@ python3 scripts/stats.py --days 7   # 出周报
 
 | 阶段 | 截止 | 词数进度 | 密度 | 速度 | 退出条件 | 决定 |
 |---|---|---:|---:|---:|---|---|
-| P1 | 2027-05-31 | 12.3k / 402k | 13.4 → 4.0 | 49 → 110 | 0 / 4 | |
+| P1 | 2027-05-31 | 12.3k / 277k | 13.4 → 4.0 | 49 → 110 | 0 / 4 | |
 | P2 | 2027-11-30 | 0 / 402k |  |  | 0 / 4 | |
 | P3 | 2028-05-31 | 0 / 524k |  |  | 0 / 4 | |
-| P4 | 2028-11-30 | 0 / 540k |  |  | 0 / 4 | 终考 |
+| P4 | 2028-11-30 | 0 / 400k |  |  | 0 / 4 | 终考 |

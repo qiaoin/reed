@@ -1,6 +1,6 @@
 # 微信读书书单 · 英文原著候选池
 
-> 快照：2026-11-26 · 来源：本机微信读书库
+> 快照：2026-11-27 · 来源：本机微信读书库
 > 扫描范围：**40 个自建书单（472 本）** + 书架 1,232 本（其中英文原著 23 本）。
 > 用途：**备选池**，不是新书单。BOARD 的 WIP 仍然是 1 本；这里只回答「下一本可以换什么」。
 
@@ -39,16 +39,16 @@ Five Little Pigs 630L · Appointment with Death 680L · Murder on the Links 730L
 
 | 书名 | 中文 | 作者 | Lexile | 词数 | 状态 | 英文版 | 备注 |
 |---|---|---|---:|---:|---|---|---|
-| And Then There Were None | 无人生还 | Agatha Christie | 570L | 60k | 未读 | 有 | 密闭空间；英文版已上架 |
+| And Then There Were None | 无人生还 | Agatha Christie | 570L | 60k | 中文读完 | 有 | 已读中文版，已移出主线至 2029 后续书单 |
 | Evil Under the Sun | 阳光下的罪恶 | Agatha Christie | 600L | 60k | 中文在读 2% | 无 | 海岛封闭；books.csv 备选 |
 | Five Little Pigs | 五只小猪 | Agatha Christie | 630L | 60k | 中文读完 | 无 | 回忆式五视角；波洛 |
 | Lord Edgware Dies | 人性记录 | Agatha Christie | 640L | 60k | 未读 | 无 | 波洛；身份错认 |
-| Murder on the Orient Express | 东方快车谋杀案 | Agatha Christie | 640L | 65k | 看过电影 | 有 | 群像对话；英文版已上架 |
+| Murder on the Orient Express | 东方快车谋杀案 | Agatha Christie | 640L | 65k | 中文读完+电影 | 有 | 已读中文版，已移出主线至 2029 后续书单 |
 | Appointment with Death | 死亡约会 | Agatha Christie | 680L | 55k | 中文读完 | 无 | 密闭考古营地 |
 | Cards on the Table | 牌中牌 | Agatha Christie | 680L | 60k | 未读 | 无 | 四侦探四嫌疑人；已在计划 |
 | Endless Night | 无尽长夜 | Agatha Christie | 700L | 70k | 未读 | 无 | 哥特；非系列；已在计划 |
 | Crooked House | 畸形屋 | Agatha Christie | 700L | 70k | 未读 | 无 | 家族密室；已在计划 |
-| The Murder of Roger Ackroyd | 罗杰疑案 | Agatha Christie | 700L | 75k | 英文在读 70.9% | 有 | 进行中；不可靠叙述 |
+| The Murder of Roger Ackroyd | 罗杰疑案 | Agatha Christie | 700L | 75k | 英文在读 75.2% | 有 | 进行中；不可靠叙述 |
 | The Body in the Library | 藏书室女尸 | Agatha Christie | 710L | 50k | 未读 | 无 | 马普尔；短 |
 | Sleeping Murder | 沉睡的谋杀 | Agatha Christie | 720L | 65k | 未读 | 无 | 马普尔；记忆不可靠 |
 | The Murder on the Links | 高尔夫球场命案 | Agatha Christie | 730L | 60k | 中文读完 | 无 | 波洛早期；黑斯廷斯视角 |
@@ -102,7 +102,7 @@ Five Little Pigs 630L · Appointment with Death 680L · Murder on the Links 730L
 | A Portrait of the Artist as a Young Man | 一个青年艺术家的画像 | James Joyce | 1120L | 85k | 未读 | 无 | 意识流入门 |
 | Moby-Dick | 白鲸 | Herman Melville | 1200L | 210k | 未读 | 无 | 百科式插叙；可跳 |
 | Middlemarch | 米德尔马契 | George Eliot | 1210L | 310k | 中文在读 1% | 无 | 超长；群像 |
-| The Remains of the Day | 长日将尽 | Kazuo Ishiguro | 1350L | 140k | 中文读完 | 无 | 终考前的最后一关；已在计划 |
+| The Remains of the Day | 长日将尽 | Kazuo Ishiguro | 1350L | 140k | 中文读完 | 无 | 已读中文版，已移出主线至 2029 后续书单 |
 | Babel | 巴别塔 | R. F. Kuang | — | 130k | 未读 | 无 | 学院幻想；主题密度高 |
 | A Gentleman in Moscow | 莫斯科绅士 | Amor Towles | — | 145k | 未读 | 无 | 封闭空间；句法优雅 |
 | Red Star Over China | 红星照耀中国 | Edgar Snow | — | 150k | 中文在读 1% | 无 | 报告文学；原文英文 |

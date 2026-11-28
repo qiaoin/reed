@@ -5,8 +5,9 @@
     python3 scripts/stats.py              # 最近 7 天
     python3 scripts/stats.py --days 30    # 最近 30 天
     python3 scripts/stats.py --all        # 全程
+    python3 scripts/stats.py --review     # 书末 10 分钟复现词清算
 
-数据源: books.csv + log/reading-log.csv（唯一真相）。
+数据源: books.csv + log/reading-log.csv（唯一真相）+ log/weread-marks.csv。
 """
 
 from __future__ import annotations
@@ -14,7 +15,9 @@ from __future__ import annotations
 import argparse
 import csv
 import difflib
+import re
 import sys
+from collections import defaultdict
 from dataclasses import dataclass
 from datetime import date, timedelta
 from pathlib import Path
@@ -22,7 +25,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BOOKS_CSV = ROOT / "books.csv"
 LOG_CSV = ROOT / "log" / "reading-log.csv"
-TARGET_WORDS = 1_868_000
+MARKS_CSV = ROOT / "log" / "weread-marks.csv"
+TARGET_WORDS = 1_603_000
 PROJECT_START = date(2026, 11, 23)
 
 
@@ -39,10 +43,10 @@ class Phase:
 
 PHASES = (
     Phase("P0", date(2026, 11, 23), date(2026, 11, 30), 999, 99.0, 8_000, "基线周"),
-    Phase("P1", date(2026, 12, 1), date(2027, 5, 31), 6, 4.0, 402_000, "去敏期"),
+    Phase("P1", date(2026, 12, 1), date(2027, 5, 31), 6, 4.0, 277_000, "去敏期"),
     Phase("P2", date(2027, 6, 1), date(2027, 11, 30), 5, 2.5, 402_000, "建图期"),
     Phase("P3", date(2027, 12, 1), date(2028, 5, 31), 4, 1.5, 524_000, "风格期"),
-    Phase("P4", date(2028, 6, 1), date(2028, 11, 30), 2, 1.0, 540_000, "沉浸期"),
+    Phase("P4", date(2028, 6, 1), date(2028, 11, 30), 2, 1.0, 400_000, "沉浸期"),
 )
 
 
@@ -296,12 +300,153 @@ def report(entries: list[Entry], since: date, until: date) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _candidate_stems(word: str) -> list[str]:
+    """生成英文单词的基础词形候选（无外部依赖），用于跨章节/跨书复现归并。"""
+    cands = [word]
+    n = len(word)
+    if n <= 3:
+        return cands
+    if word.endswith("ies") and n > 4:
+        cands.append(word[:-3] + "y")
+    elif word.endswith("es") and n > 4 and word[-4:-2] in ("ch", "sh"):
+        cands.append(word[:-2])
+    elif word.endswith("s") and not word.endswith(("ss", "us", "is")):
+        cands.append(word[:-1])
+
+    if word.endswith("ied") and n > 4:
+        cands.append(word[:-3] + "y")
+    elif word.endswith("ed") and n > 4:
+        stem = word[:-2]
+        cands.append(stem)
+        cands.append(word[:-1])
+        if len(stem) >= 4 and stem[-1] == stem[-2]:
+            cands.append(stem[:-1])
+
+    if word.endswith("ing") and n > 5:
+        stem = word[:-3]
+        cands.append(stem)
+        cands.append(stem + "e")
+        if len(stem) >= 4 and stem[-1] == stem[-2]:
+            cands.append(stem[:-1])
+
+    if word.endswith("ily") and n > 5:
+        cands.append(word[:-3])
+        cands.append(word[:-3] + "y")
+    elif word.endswith("ly") and n > 5:
+        cands.append(word[:-2])
+        if word.endswith("bly"):
+            cands.append(word[:-2] + "le")
+    return [c for c in dict.fromkeys(cands) if len(c) >= 3]
+
+
+def review_report(min_count: int = 2) -> str:
+    """书末 10 分钟复现清算：从 weread-marks.csv 筛出累计复现 >= min_count 次的词。"""
+    if not MARKS_CSV.exists():
+        return "## 复现生词清算\n\n还没有 `log/weread-marks.csv`，先跑一次 `python3 scripts/weread_sync.py`。\n"
+
+    records: list[dict] = []
+    with MARKS_CSV.open(encoding="utf-8-sig", newline="") as fh:
+        for row in csv.DictReader(fh):
+            raw = (row.get("text") or "").strip()
+            cleaned = re.sub(r"^[^a-zA-Z]+|[^a-zA-Z]+$", "", raw).lower()
+            cleaned = re.sub(r"\s+", " ", cleaned)
+            if not cleaned or len(cleaned.split()) > 3:
+                continue
+            records.append({
+                "norm": cleaned,
+                "raw": raw,
+                "book": (row.get("book") or "").strip(),
+                "chapter": (row.get("chapter") or "").strip(),
+                "status": (row.get("status") or "").strip(),
+                "datetime": (row.get("datetime") or "").strip(),
+            })
+
+    if not records:
+        return "## 复现生词清算\n\n暂无有效生词记录。\n"
+
+    # 语料内词形归并：只有当候选词干在语料中实际出现、或被 >=2 个不同词形共享时才合并
+    single_words = {r["norm"] for r in records if " " not in r["norm"]}
+    stem_owners: dict[str, set[str]] = defaultdict(set)
+    for w in single_words:
+        for stem in _candidate_stems(w):
+            stem_owners[stem].add(w)
+
+    lemma_map: dict[str, str] = {}
+    for w in single_words:
+        cands = _candidate_stems(w)
+        shared = [c for c in cands[1:] if c in single_words or len(stem_owners[c]) >= 2]
+        lemma_map[w] = min(shared, key=len) if shared else w
+
+    groups: dict[str, list[dict]] = defaultdict(list)
+    for r in records:
+        key = lemma_map.get(r["norm"], r["norm"])
+        groups[key].append(r)
+
+    green_only: list[tuple[str, list[dict]]] = []
+    looked_again: list[tuple[str, list[dict]]] = []
+    for key, items in groups.items():
+        if len(items) < min_count:
+            continue
+        if any(it["status"] == "查" for it in items):
+            looked_again.append((key, items))
+        else:
+            green_only.append((key, items))
+
+    green_only.sort(key=lambda x: (-len(x[1]), x[0]))
+    looked_again.sort(key=lambda x: (-len(x[1]), x[0]))
+    discarded = sum(1 for items in groups.values() if len(items) < min_count)
+
+    def _fmt_table(rows: list[tuple[str, list[dict]]]) -> list[str]:
+        if not rows:
+            return ["（无）", ""]
+        out = [
+            "| 词条 | 出现形式 | 次数 | 状态 | 位置 |",
+            "|---|---|---:|---|---|",
+        ]
+        for key, items in rows:
+            forms = " / ".join(dict.fromkeys(it["norm"] for it in items))
+            n_lk = sum(1 for it in items if it["status"] == "查")
+            n_mk = len(items) - n_lk
+            st = " ".join(p for p in (f"查{n_lk}" if n_lk else "", f"留{n_mk}" if n_mk else "") if p)
+            locs = list(dict.fromkeys(
+                f"{it['book'].split()[0]}:{it['chapter'].split()[0] if it['chapter'] else '?'}"
+                if len({x['book'] for x in items}) > 1
+                else (it["chapter"][:22] or it["book"][:22])
+                for it in items
+            ))
+            out.append(f"| **{key}** | {forms} | {len(items)} | {st} | {'；'.join(locs[:3])} |")
+        out.append("")
+        return out
+
+    lines = [
+        f"## 书末复现词清算（阈值 ≥ {min_count} 次）",
+        "",
+        f"扫描 {len(records)} 条标记（归并后 {len(groups)} 个词条）："
+        f"**捞出 {len(green_only) + len(looked_again)} 个复现词**，自动放生 {discarded} 个单次偶遇词。",
+        "",
+        f"### 1. 复现绿标词（未查但反复遇到，{len(green_only)} 个）",
+        "",
+        *_fmt_table(green_only),
+        f"### 2. 查过又忘 / 反复查（{len(looked_again)} 个）",
+        "",
+        *_fmt_table(looked_again),
+        "> 动作：花 10 分钟集中扫一遍核心义即可，不背诵、不进 Anki，下本书在语境里自然固化。",
+    ]
+    return "\n".join(lines) + "\n"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="reed 阅读统计")
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--days", type=int, default=7, help="统计最近 N 天（默认 7）")
     group.add_argument("--all", action="store_true", help="统计全部记录")
+    group.add_argument("--review", action="store_true", help="书末 10 分钟复现词清算")
+    parser.add_argument("--min-count", type=int, default=2, help="--review 最小复现次数（默认 2）")
     args = parser.parse_args()
+
+    if args.review:
+        print(review_report(args.min_count))
+        return
 
     books = load_books()
     entries = load_entries(books)

@@ -1,26 +1,26 @@
 phase,order,title,author,words,lexile,difficulty,status,advantage,role,weread_id,slot
 P1,1,The Murder of Roger Ackroyd,Agatha Christie,75000,700L,3,reading,看过中文,进行中；基线书,3300198565,main
 P1,2,The Magic Finger,Roald Dahl,2500,560L,1,done,未读,一次读完的锚点：20 分钟,CB_4NwAJQAInC3N77p79X6Ap1Gc,bedtime
-P1,3,And Then There Were None,Agatha Christie,60000,570L,2,queued,看过中文+英剧,密闭空间；去敏主力,,main
-P1,4,Murder on the Orient Express,Agatha Christie,65000,640L,2.5,queued,看过电影,群像对话；谁在说话,,main
-P1,5,Cards on the Table,Agatha Christie,60000,680L,3,queued,未读,波洛；四嫌疑人四侦探；桌边推理,,main
-P1,6,Endless Night,Agatha Christie,70000,700L,3,queued,未读,哥特；不可靠叙述；非系列,,main
-P1,7,Crooked House,Agatha Christie,70000,700L,3,queued,未读,家族密室；叙述者视角；收尾,,main
+P1,3,Cards on the Table,Agatha Christie,60000,680L,3,queued,未读,波洛；四嫌疑人四侦探；桌边推理,,main
+P1,4,Endless Night,Agatha Christie,70000,700L,3,queued,未读,哥特；不可靠叙述；非系列,,main
+P1,5,Crooked House,Agatha Christie,70000,700L,3,queued,未读,家族密室；叙述者视角；收尾,,main
 P2,1,Harry Potter and the Philosopher's Stone,J. K. Rowling,77000,880L,2.5,queued,看过影视,剧情已知；长篇入门,,main
 P2,2,Harry Potter and the Chamber of Secrets,J. K. Rowling,85000,940L,3,queued,看过影视,对话量大；人物关系扩展,,main
-P2,3,"The Lion, the Witch and the Wardrobe",C. S. Lewis,38000,940L,2.5,queued,看过影视,短篇奇幻；换口气,,main
-P2,4,Prince Caspian,C. S. Lewis,45000,870L,3,queued,可能看过,中世纪叙事；句法变旧,,main
-P2,5,The Voyage of the Dawn Treader,C. S. Lewis,50000,970L,3,queued,可能看过,单元式结构；每章一个岛,,main
-P2,6,Harry Potter and the Prisoner of Azkaban,J. K. Rowling,107000,880L,3,queued,看过影视,十万词长跑；P2 期末考,,main
+P2,3,"The Lion, the Witch and the Wardrobe",C. S. Lewis,38000,940L,2.5,queued,未读,短篇奇幻；换口气,,main
+P2,4,Prince Caspian,C. S. Lewis,45000,870L,3,queued,未读,中世纪叙事；句法变旧,,main
+P2,5,The Voyage of the Dawn Treader,C. S. Lewis,50000,970L,3,queued,未读,单元式结构；每章一个岛,,main
+P2,6,Harry Potter and the Prisoner of Azkaban,J. K. Rowling,107000,880L,3,queued,未读,十万词长跑；P2 期末考,,main
 P3,1,Runaway,Alice Munro,84000,,4,queued,未读中文,短篇集；8 篇独立；时间跳跃与留白；P3 开篇换挡,,main
 P3,2,The Fellowship of the Ring,J. R. R. Tolkien,180000,860L,4.5,queued,看过影视,史诗开篇；诗歌可整段跳,,main
 P3,3,The Two Towers,J. R. R. Tolkien,155000,860L,4.5,queued,看过影视,双线叙事；长句耐力,,main
 P3,4,The Long Goodbye,Raymond Chandler,105000,,4.5,queued,可能看过影视,硬汉派俚语与省略；最像听力,,main
-P4,1,Harry Potter and the Goblet of Fire,J. K. Rowling,190000,880L,3.5,queued,看过影视,十九万词耐力；P4 开场,,main
+P4,1,Harry Potter and the Goblet of Fire,J. K. Rowling,190000,880L,3.5,queued,未读,十九万词耐力；P4 开场,,main
 P4,2,The Return of the King,J. R. R. Tolkien,130000,860L,4.5,queued,看过影视,三部曲收束,,main
-P4,3,The Remains of the Day,Kazuo Ishiguro,140000,1350L,5,queued,看过中文,不可靠叙述顶点；终考前的最后一关,,main
-P4,4,Final Exam (TBD),自选,80000,,4,queued,必须未读,终考：陌生推理小说,,main
+P4,3,Final Exam (TBD),自选,80000,,4,queued,必须未读,终考：陌生推理小说,,main
 EXT,1,Steve Jobs,Walter Isaacson,570000,1080L,4,queued,未读,2029 加时第一本（方案 A）,,main
+EXT,2,The Remains of the Day,Kazuo Ishiguro,140000,1350L,5,queued,看过中文,已读中文版，移出主线归入后续书单,,main
+EXT,3,And Then There Were None,Agatha Christie,60000,570L,2,queued,看过中文+英剧,已读中文版，移出主线归入后续书单,,main
+EXT,4,Murder on the Orient Express,Agatha Christie,65000,640L,2.5,queued,看过中文+电影,已读中文版，移出主线归入后续书单,,main
 BED,1,The Enormous Crocodile,Roald Dahl,1000,600L,1,queued,可能看过,另购：一晚读完的开场,,bedtime
 BED,2,The Giraffe and the Pelly and Me,Roald Dahl,5000,740L,2,done,未读,诚品 16 册：2 晚,,bedtime
 BED,3,Esio Trot,Roald Dahl,5000,740L,2,done,未读,诚品 16 册：2 晚,,bedtime
